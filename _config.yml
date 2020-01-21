@@ -4,9 +4,9 @@
 
 # Site
 title: TianciBlog
-subtitle: ''
+subtitle: '天赐博客'
 description: '天赐博客'
-keywords:
+keywords: '天赐博客,TianciBlog'
 author: Tianci
 language: en
 timezone: ''
@@ -22,14 +22,14 @@ pretty_urls:
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+source_dir: source #资源文件夹，这个文件夹用来存放内容
+public_dir: public #公共文件夹，这个文件夹用于存放生成的站点文件。
+tag_dir: tags # 标签文件夹
+archive_dir: archives #归档文件夹
+category_dir: categories #分类文件夹
+code_dir: downloads/code #Include code 文件夹
+i18n_dir: :lang #国际化（i18n）文件夹
+skip_render: life/*.html #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -63,8 +63,8 @@ index_generator:
 
 # Category & Tag
 default_category: uncategorized
-category_map:
-tag_map:
+category_map: #分类别名
+tag_map: #标签别名
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
