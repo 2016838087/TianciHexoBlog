@@ -1,3 +1,17 @@
+/* 返回按钮 */
+.toolbar-open {
+  background: url(../images/home.png) no-repeat center rgba(0,0,0,0.6);
+  background-size: 20px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  top: 20%;
+  border-radius: 5px 0 0 5px;
+  transition: all 0.4s;
+  z-index: 9999999;
+}
+
 .cover-wrapper {
   margin: 0 auto;
   height: 100vh;
