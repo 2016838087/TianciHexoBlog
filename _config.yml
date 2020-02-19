@@ -29,7 +29,7 @@ archive_dir: archives #归档文件夹
 category_dir: categories #分类文件夹
 code_dir: downloads/code #Include code 文件夹
 i18n_dir: :lang #国际化（i18n）文件夹
-skip_render: [about/**, life/**]
+skip_render: [about/**, life/**,404/**]
 #skip_render: life/*.html #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
 
 # Writing
