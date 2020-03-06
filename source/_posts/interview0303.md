@@ -45,6 +45,7 @@ static void Main(string[] args)
         sum += jieCheng(i);
     }
     Console.WriteLine(sum);
+    Console.ReadKey();
 }
 public static int jieCheng(int n)
 {
@@ -108,5 +109,6 @@ for (int i = 0; i < num.Length; i++)
 {
     Console.WriteLine(num[i]);
 }
+Console.ReadKey();
 ```
 ### 行了行了就这样吧！！！
