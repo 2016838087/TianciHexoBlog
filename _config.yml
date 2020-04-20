@@ -98,7 +98,7 @@ theme: antiquity
 
 
 live2d:
-  enable: false
+  enable: true
   scriptFrom: local
   pluginRootPath: live2dw/
   pluginJsPath: lib/
