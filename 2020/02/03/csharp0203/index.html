@@ -1,325 +1,507 @@
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="TianciBlog" href="https://lovetianci.cn/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="TianciBlog" href="https://lovetianci.cn/atom.xml" />
+<link rel="alternate" type="application/json" title="TianciBlog" href="https://lovetianci.cn/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <title>WebAPI全局异常处理 | TianciBlog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
-  
-  
-  <meta name="keywords" content="天赐博客,天赐个人博客,天赐个人网站,TianciBlog" />
-  
-  <meta name="description" content="记录一下WebAPI的全局异常处理">
-<meta property="og:type" content="article">
-<meta property="og:title" content="WebAPI全局异常处理">
-<meta property="og:url" content="https://lovetianci.cn/2020/02/03/csharp0203/index.html">
-<meta property="og:site_name" content="TianciBlog">
-<meta property="og:description" content="记录一下WebAPI的全局异常处理">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://lovetianci.cn/2020/02/03/csharp0203/errormsg.png">
-<meta property="og:image" content="https://lovetianci.cn/2020/02/03/csharp0203/backmsg.png">
-<meta property="og:image" content="https://lovetianci.cn/2020/02/03/csharp0203/byebye.jpg">
-<meta property="article:published_time" content="2020-02-03T13:21:21.000Z">
-<meta property="article:modified_time" content="2020-04-08T03:35:39.711Z">
-<meta property="article:author" content="Tianci">
-<meta property="article:tag" content="技术">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://lovetianci.cn/2020/02/03/csharp0203/errormsg.png">
-  
-    <link rel="alternate" href="/atom.xml" title="TianciBlog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/images/favicon.ico">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+  <meta name="keywords" content="技术" />
 
-  
-<link rel="stylesheet" href="/css/highlight.css">
 
+<link rel="canonical" href="https://lovetianci.cn/2020/02/03/csharp0203/">
+
+
+
+  <title>
+WebAPI全局异常处理 - DotNET |
+Tianciの小窝 = TianciBlog = 天赐博客</title>
 <meta name="generator" content="Hexo 4.2.0"></head>
-
-<body>
-  <div id="fullpage" class="mobile-nav-right">
-    
-      <div id="wrapper" title="这是一张背景图">
-    
-    
-      <header id="header">
-  <div id="nav-toggle" class="nav-toggle"></div>
-  <div class="head-box global-width">
-    <nav class="nav-box nav-right">
-      
-        <a class="nav-item" href="/" title
-        
-        >首页</a>
-      
-        <a class="nav-item" href="/archives" title
-        
-        >归档</a>
-      
-        <a class="nav-item" href="http://lovetianci.cn/onlinemusic/" title
-        
-        >音乐</a>
-      
-        <a class="nav-item" href="/about" title
-        
-        >关于</a>
-      
-    </nav>
-  </div>
-</header>
-      <div id="middlecontent" title class="global-width sidebar-right">
-        <section id="main"><article id="post-csharp0203" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 class="article-title" itemprop="name">
-      WebAPI全局异常处理
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2020/02/03/csharp0203/" class="article-date">
-  <time datetime="2020-02-03T13:21:21.000Z" itemprop="datePublished">2020-02-03</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/NET/">.NET</a>
-  </div>
-
-    
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
-
-  </div>
-  
-    <span id="busuanzi_container_page_pv">
-      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
-    </span>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        <h2 id="记录一下WebAPI的全局异常处理"><a href="#记录一下WebAPI的全局异常处理" class="headerlink" title="记录一下WebAPI的全局异常处理"></a>记录一下WebAPI的全局异常处理</h2><a id="more"></a>
-
-<h3 id="通常接口出现一些小错误，页面会返回一堆看不懂的代码"><a href="#通常接口出现一些小错误，页面会返回一堆看不懂的代码" class="headerlink" title="通常接口出现一些小错误，页面会返回一堆看不懂的代码"></a>通常接口出现一些小错误，页面会返回一堆看不懂的代码</h3><h3 id="这对于我们寻找错误并没有什么太大的帮助，反而看着很难受"><a href="#这对于我们寻找错误并没有什么太大的帮助，反而看着很难受" class="headerlink" title="这对于我们寻找错误并没有什么太大的帮助，反而看着很难受"></a>这对于我们寻找错误并没有什么太大的帮助，反而看着很难受</h3><p><img src="/2020/02/03/csharp0203/errormsg.png" alt="错误信息" title="错误信息"></p>
-<h3 id="遇到这种情况我们可以写一个全局异常过滤器，接口报错直接跳到过滤器"><a href="#遇到这种情况我们可以写一个全局异常过滤器，接口报错直接跳到过滤器" class="headerlink" title="遇到这种情况我们可以写一个全局异常过滤器，接口报错直接跳到过滤器"></a>遇到这种情况我们可以写一个全局异常过滤器，接口报错直接跳到过滤器</h3><h3 id="首先新建一个ActionFilter类（随便命名），继承至ExceptionFilterAttribute"><a href="#首先新建一个ActionFilter类（随便命名），继承至ExceptionFilterAttribute" class="headerlink" title="首先新建一个ActionFilter类（随便命名），继承至ExceptionFilterAttribute"></a>首先新建一个ActionFilter类（随便命名），继承至ExceptionFilterAttribute</h3><h3 id="代码如下"><a href="#代码如下" class="headerlink" title="代码如下"></a>代码如下</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSHARP"><figure class="iseeu highlight /csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> Remark:过滤掉WebApi接口的异常，统一返回异常信息</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ActionFilter</span> : <span class="title">ExceptionFilterAttribute</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnException</span>(<span class="params">HttpActionExecutedContext context</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">//记录错误日志</span></span><br><span class="line">        <span class="comment">//LogHelper.Error($"&#123;context.Exception &#125;", context.Request.RequestUri.AbsolutePath);</span></span><br><span class="line">        <span class="comment">//篡改Response  </span></span><br><span class="line">        context.Response = <span class="keyword">new</span> HttpResponseMessage(HttpStatusCode.OK)</span><br><span class="line">        &#123;</span><br><span class="line">            Content = <span class="keyword">new</span> StringContent(JsonConvert.SerializeObject(<span class="keyword">new</span></span><br><span class="line">            &#123;</span><br><span class="line">                code = <span class="string">"520"</span>,</span><br><span class="line">                res = <span class="keyword">new</span></span><br><span class="line">                &#123;</span><br><span class="line">                    msg = <span class="string">"接口有问题"</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;))</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<!-- ![ActionFilter](code.png "ActionFilter") -->
-
-<h3 id="然后在WebApiConfig类里面全局配置"><a href="#然后在WebApiConfig类里面全局配置" class="headerlink" title="然后在WebApiConfig类里面全局配置"></a>然后在WebApiConfig类里面全局配置</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="CSHARP"><figure class="iseeu highlight /csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">WebApiConfig</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">HttpConfiguration config</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">// Web API 配置和服务</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// Web API 路由</span></span><br><span class="line">        config.MapHttpAttributeRoutes();</span><br><span class="line"></span><br><span class="line">        config.Routes.MapHttpRoute(</span><br><span class="line">            name: <span class="string">"DefaultApi"</span>,</span><br><span class="line">            routeTemplate: <span class="string">"api/&#123;controller&#125;/&#123;id&#125;"</span>,</span><br><span class="line">            defaults: <span class="keyword">new</span> &#123; id = RouteParameter.Optional &#125;</span><br><span class="line">        );</span><br><span class="line"></span><br><span class="line">        <span class="comment">//全局注册异常过滤器</span></span><br><span class="line">        config.Filters.Add(<span class="keyword">new</span> ActionFilter());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
-<!-- ![WebApiConfig](code2.png "WebApiConfig") -->
-
-<h3 id="只要接口出现异常就会跳到这个地方，返回我们定义的信息"><a href="#只要接口出现异常就会跳到这个地方，返回我们定义的信息" class="headerlink" title="只要接口出现异常就会跳到这个地方，返回我们定义的信息"></a>只要接口出现异常就会跳到这个地方，返回我们定义的信息</h3><p><img src="/2020/02/03/csharp0203/backmsg.png" alt="返回信息" title="返回信息"></p>
-<h3 id="可以看到，尽管接口已经抛出异常了，但是网页返回的信息依旧是我所定义的"><a href="#可以看到，尽管接口已经抛出异常了，但是网页返回的信息依旧是我所定义的" class="headerlink" title="可以看到，尽管接口已经抛出异常了，但是网页返回的信息依旧是我所定义的"></a>可以看到，尽管接口已经抛出异常了，但是网页返回的信息依旧是我所定义的</h3><h3 id="错误信息可以打印到日志，避免接口信息泄露，具体打印日志下期再说"><a href="#错误信息可以打印到日志，避免接口信息泄露，具体打印日志下期再说" class="headerlink" title="错误信息可以打印到日志，避免接口信息泄露，具体打印日志下期再说"></a>错误信息可以打印到日志，避免接口信息泄露，具体打印日志下期再说</h3><h1 id="学业繁忙，告辞"><a href="#学业繁忙，告辞" class="headerlink" title="学业繁忙，告辞"></a>学业繁忙，告辞</h1><p><img src="/2020/02/03/csharp0203/byebye.jpg" alt="告辞" title="告辞"></p>
-
-      
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
-    
-      <footer class="article-footer">
-        完
-      </footer>
-    
   </div>
-  
-    
-<nav id="article-nav">
-  <div class="article-nav-block">
-    
-      <a href="/2020/02/10/csharp0210/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption"></strong>
-        <div class="article-nav-title">
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
           
-            C#扩展方法
-          
-        </div>
-      </a>
-    
-  </div>
-  <div class="article-nav-block">
-    
-      <a href="/2020/01/28/ajax0128/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">学习Ajax</div>
-        <strong class="article-nav-caption"></strong>
-      </a>
-    
-  </div>
-</nav>
-
-    <!-- <link rel="stylesheet" href="/css/gitment.css"> 
-<script src="/js/gitment.js"></script>
-
-<div id="gitmentContainer"></div>
-
-<script>
-var gitment = new Gitment({
-  owner: '',
-  repo: '',
-  oauth: {
-    client_id: '',
-    client_secret: '',
-  },
-})
-gitment.render('gitmentContainer')
-</script>
- -->
+  <h1 itemprop="name headline">WebAPI全局异常处理
+  </h1>
   
-  
-</article>
-</section>
-        <aside id="sidebar">
-  
-    <div class="widget-box">
-  <div class="avatar-box">
-    <img class="avatar" src="/images/tianci.jpg" title="你瞅啥???"></img>
-    <h3 class="avatar-name">
-      
-        Tianci天赐
-      
-    </h3>
-    <p class="avatar-slogan">
-      一身清贫怎敢入繁华
-    </p>
-  </div>
+<div class="meta">
+  <span class="item" title="Created: 2020-02-03 21:21:21">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2020-02-03T21:21:21+08:00">2020-02-03</time>
+  </span>
 </div>
 
 
-  
-    
-  <div class="widget-box">
-    <h3 class="widget-title">分类</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/NET/">.NET</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Ajax/">Ajax</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%97%B2%E6%83%85%E9%9B%85%E8%87%B4/">闲情雅致</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-box">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%A8%B1%E4%B9%90/" rel="tag">娱乐</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%A2%E8%AF%95%E9%A2%98/" rel="tag">面试题</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-box">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/04/">April 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">March 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li></ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-box">
-    <h3 class="widget-title">标题</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/04/14/mysql0414/">MVC连接MySQL教程</a>
-          </li>
-        
-          <li>
-            <a href="/2020/04/03/csharp0403/">C# Reamrk特性</a>
-          </li>
-        
-          <li>
-            <a href="/2020/03/06/interview0306/">C#理论面试题</a>
-          </li>
-        
-          <li>
-            <a href="/2020/03/03/interview0303/">C#简单面试题</a>
-          </li>
-        
-          <li>
-            <a href="/2020/02/10/csharp0210/">C#扩展方法</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-      <div class="widget-box">
-    <h3 class="widget-title">友链</h3>
-    <div class="widget">
-      
-        <a style="display: block;" href="http://lovetianci.cn/wallpaper" title target='_blank'
-        >TianciWallpaper</a>
-      
-        <a style="display: block;" href="http://lovetianci.cn/showdoc/web/#/" title target='_blank'
-        >TianciShowdoc</a>
-      
-    </div>
-  </div>
-
-  
-</aside>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
       </div>
-      <footer id="footer">
-  <div class="foot-box global-width">
-    &copy; 2020 Tianci&nbsp;
-    |&nbsp;&nbsp;<a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener">湘ICP备19020367号-1</a>
-    <br>
-    <!-- 链接更换：https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js -->
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <span id="busuanzi_container_site_pv">您是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Tianciの小窝</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
   </div>
-</footer>
-<!--页面点击小红心-->
-<script type="text/javascript" src="/js/love.js"></script>
-      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-<script>
-if (!window.jQuery) {
-var script = document.createElement('script');
-script.src = "/js/jquery-2.0.3.min.js";
-document.body.write(script);
-}
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+          <img src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg">
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/DotNET/" itemprop="item" rel="index" title="In DotNET"><span itemprop="name">DotNET</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://lovetianci.cn/2020/02/03/csharp0203/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="Tianci">
+    <meta itemprop="description" content="天赐博客, 天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="TianciBlog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+      <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          <img data-src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg" itemprop="contentUrl">
+      </div>
+
+    <h2 id="记录一下webapi的全局异常处理"><a class="markdownIt-Anchor" href="#记录一下webapi的全局异常处理">#</a> 记录一下 WebAPI 的全局异常处理</h2>
+<a id="more"></a>
+<h3 id="通常接口出现一些小错误页面会返回一堆看不懂的代码"><a class="markdownIt-Anchor" href="#通常接口出现一些小错误页面会返回一堆看不懂的代码">#</a> 通常接口出现一些小错误，页面会返回一堆看不懂的代码</h3>
+<h3 id="这对于我们寻找错误并没有什么太大的帮助反而看着很难受"><a class="markdownIt-Anchor" href="#这对于我们寻找错误并没有什么太大的帮助反而看着很难受">#</a> 这对于我们寻找错误并没有什么太大的帮助，反而看着很难受</h3>
+<p><img data-src="errormsg.png" alt="错误信息" title="错误信息"></p>
+<h3 id="遇到这种情况我们可以写一个全局异常过滤器接口报错直接跳到过滤器"><a class="markdownIt-Anchor" href="#遇到这种情况我们可以写一个全局异常过滤器接口报错直接跳到过滤器">#</a> 遇到这种情况我们可以写一个全局异常过滤器，接口报错直接跳到过滤器</h3>
+<h3 id="首先新建一个actionfilter类继承至exceptionfilterattribute"><a class="markdownIt-Anchor" href="#首先新建一个actionfilter类继承至exceptionfilterattribute">#</a> 首先新建一个 ActionFilter 类，继承至 ExceptionFilterAttribute</h3>
+<h3 id="代码如下"><a class="markdownIt-Anchor" href="#代码如下">#</a> 代码如下</h3>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> Remark:过滤掉WebApi接口的异常，统一返回异常信息</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">ActionFilter</span> : <span class="title">ExceptionFilterAttribute</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">override</span> <span class="keyword">void</span> <span class="title">OnException</span>(<span class="params">HttpActionExecutedContext context</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">//记录错误日志</span></span><br><span class="line">        <span class="comment">//LogHelper.Error($"&#123;context.Exception &#125;", context.Request.RequestUri.AbsolutePath);</span></span><br><span class="line">        <span class="comment">//篡改Response  </span></span><br><span class="line">        context.Response = <span class="keyword">new</span> HttpResponseMessage(HttpStatusCode.OK)</span><br><span class="line">        &#123;</span><br><span class="line">            Content = <span class="keyword">new</span> StringContent(JsonConvert.SerializeObject(<span class="keyword">new</span></span><br><span class="line">            &#123;</span><br><span class="line">                code = <span class="string">"520"</span>,</span><br><span class="line">                res = <span class="keyword">new</span></span><br><span class="line">                &#123;</span><br><span class="line">                    msg = <span class="string">"接口有问题"</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;))</span><br><span class="line">        &#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<!-- ![ActionFilter](code.png "ActionFilter") -->
+<h3 id="然后在webapiconfig类里面全局配置"><a class="markdownIt-Anchor" href="#然后在webapiconfig类里面全局配置">#</a> 然后在 WebApiConfig 类里面全局配置</h3>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">WebApiConfig</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Register</span>(<span class="params">HttpConfiguration config</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">// Web API 配置和服务</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// Web API 路由</span></span><br><span class="line">        config.MapHttpAttributeRoutes();</span><br><span class="line"></span><br><span class="line">        config.Routes.MapHttpRoute(</span><br><span class="line">            name: <span class="string">"DefaultApi"</span>,</span><br><span class="line">            routeTemplate: <span class="string">"api/&#123;controller&#125;/&#123;id&#125;"</span>,</span><br><span class="line">            defaults: <span class="keyword">new</span> &#123; id = RouteParameter.Optional &#125;</span><br><span class="line">        );</span><br><span class="line"></span><br><span class="line">        <span class="comment">//全局注册异常过滤器</span></span><br><span class="line">        config.Filters.Add(<span class="keyword">new</span> ActionFilter());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<!-- ![WebApiConfig](code2.png "WebApiConfig") -->
+<h3 id="只要接口出现异常就会跳到这个地方返回我们定义的信息"><a class="markdownIt-Anchor" href="#只要接口出现异常就会跳到这个地方返回我们定义的信息">#</a> 只要接口出现异常就会跳到这个地方，返回我们定义的信息</h3>
+<p><img data-src="backmsg.png" alt="返回信息" title="返回信息"></p>
+<h3 id="可以看到尽管接口已经抛出异常了但是网页返回的信息依旧是我所定义的"><a class="markdownIt-Anchor" href="#可以看到尽管接口已经抛出异常了但是网页返回的信息依旧是我所定义的">#</a> 可以看到，尽管接口已经抛出异常了，但是网页返回的信息依旧是我所定义的</h3>
+<h3 id="错误信息可以打印到日志避免接口信息泄露具体打印日志下期再说"><a class="markdownIt-Anchor" href="#错误信息可以打印到日志避免接口信息泄露具体打印日志下期再说">#</a> 错误信息可以打印到日志，避免接口信息泄露，具体打印日志下期再说</h3>
+<h1 id="学业繁忙告辞"><a class="markdownIt-Anchor" href="#学业繁忙告辞">#</a> 学业繁忙，告辞</h1>
+<p><img data-src="byebye.jpg" alt="告辞" title="告辞"></p>
+
+      <div class="tags">
+          <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"><i class="ic i-tag"></i> 技术</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2020-11-27 23:27:52" itemprop="dateModified" datetime="2020-11-27T23:27:52+08:00">2020-11-27</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Tianci WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="Tianci Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="Tianci PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="https://lovetianci.cn/2020/02/03/csharp0203/" title="WebAPI全局异常处理">https://lovetianci.cn/2020/02/03/csharp0203/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2020/01/28/ajax0128/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="学习Ajax">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> Other</span>
+  <h3>学习Ajax</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/2020/02/10/csharp0210/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="C#扩展方法">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> DotNET</span>
+  <h3>C#扩展方法</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#记录一下webapi的全局异常处理"><span class="toc-number">1.</span> <span class="toc-text"># 记录一下 WebAPI 的全局异常处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#通常接口出现一些小错误页面会返回一堆看不懂的代码"><span class="toc-number">1.1.</span> <span class="toc-text"># 通常接口出现一些小错误，页面会返回一堆看不懂的代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这对于我们寻找错误并没有什么太大的帮助反而看着很难受"><span class="toc-number">1.2.</span> <span class="toc-text"># 这对于我们寻找错误并没有什么太大的帮助，反而看着很难受</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#遇到这种情况我们可以写一个全局异常过滤器接口报错直接跳到过滤器"><span class="toc-number">1.3.</span> <span class="toc-text"># 遇到这种情况我们可以写一个全局异常过滤器，接口报错直接跳到过滤器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#首先新建一个actionfilter类继承至exceptionfilterattribute"><span class="toc-number">1.4.</span> <span class="toc-text"># 首先新建一个 ActionFilter 类，继承至 ExceptionFilterAttribute</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码如下"><span class="toc-number">1.5.</span> <span class="toc-text"># 代码如下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#然后在webapiconfig类里面全局配置"><span class="toc-number">1.6.</span> <span class="toc-text"># 然后在 WebApiConfig 类里面全局配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#只要接口出现异常就会跳到这个地方返回我们定义的信息"><span class="toc-number">1.7.</span> <span class="toc-text"># 只要接口出现异常就会跳到这个地方，返回我们定义的信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#可以看到尽管接口已经抛出异常了但是网页返回的信息依旧是我所定义的"><span class="toc-number">1.8.</span> <span class="toc-text"># 可以看到，尽管接口已经抛出异常了，但是网页返回的信息依旧是我所定义的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#错误信息可以打印到日志避免接口信息泄露具体打印日志下期再说"><span class="toc-number">1.9.</span> <span class="toc-text"># 错误信息可以打印到日志，避免接口信息泄露，具体打印日志下期再说</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#学业繁忙告辞"><span class="toc-number"></span> <span class="toc-text"># 学业繁忙，告辞</span></a>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li class="active"><a href="/2020/02/03/csharp0203/" rel="bookmark" title="WebAPI全局异常处理">WebAPI全局异常处理</a></li><li><a href="/2020/02/10/csharp0210/" rel="bookmark" title="C#扩展方法">C#扩展方法</a></li><li><a href="/2020/03/03/interview0303/" rel="bookmark" title="C#简单面试题">C#简单面试题</a></li><li><a href="/2020/03/06/interview0306/" rel="bookmark" title="C#理论面试题">C#理论面试题</a></li><li><a href="/2020/04/03/csharp0403/" rel="bookmark" title="C# Reamrk特性">C# Reamrk特性</a></li><li><a href="/2020/06/10/csharp0610/" rel="bookmark" title=".NET Core 部署IIS">.NET Core 部署IIS</a></li><li><a href="/2020/07/03/csharp0703/" rel="bookmark" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></li><li><a href="/2020/07/09/csharp0709/" rel="bookmark" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Tianci"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">Tianci</p>
+  <div class="description" itemprop="description">天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">17</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">5</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTY4MzgwODc=" title="https:&#x2F;&#x2F;github.com&#x2F;2016838087"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2020/01/28/ajax0128/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2020/02/10/csharp0210/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/2020/04/23/vue0423/" title="学习vue遇到的坑">学习vue遇到的坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Other/" title="In Other">Other</a>
+</div>
+
+    <span><a href="/2020/01/09/update/" title="版本更新">版本更新</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/07/03/csharp0703/" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/03/03/interview0303/" title="C#简单面试题">C#简单面试题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SQL/" title="In SQL">SQL</a>
+</div>
+
+    <span><a href="/2020/04/14/mysql0414/" title="MVC连接MySQL教程">MVC连接MySQL教程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/02/03/csharp0203/" title="WebAPI全局异常处理">WebAPI全局异常处理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/2020/01/12/hexo0112/" title="Hexo安装与部署">Hexo安装与部署</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Other/" title="In Other">Other</a>
+</div>
+
+    <span><a href="/2020/10/11/git1011/" title="Windows服务器搭建私人GitLab">Windows服务器搭建私人GitLab</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/2020/01/13/hexo0113/" title="Hexo文件操作">Hexo文件操作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/07/09/csharp0709/" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></span>
+  </li>
+
+  </ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2020</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Tianci @ Tianciの小窝</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2020/02/03/csharp0203/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-
-
-
-<script src="/js/script.js"></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
 
-    </div>
-    <nav id="mobile-nav" class="mobile-nav-box">
-  <div class="mobile-nav-img mobile-nav-top"></div>
-  
-    <a href="/" class="mobile-nav-link">首页</a>
-  
-    <a href="/archives" class="mobile-nav-link">归档</a>
-  
-    <a href="http://lovetianci.cn/onlinemusic/" class="mobile-nav-link">音乐</a>
-  
-    <a href="/about" class="mobile-nav-link">关于</a>
-  
-  <div class="mobile-nav-img  mobile-nav-bottom"></div>
-</nav>    
-  </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

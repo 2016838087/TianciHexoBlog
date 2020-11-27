@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>TianciBlog • Posts by &#34;hexo&#34; category</title>
+        <link>https://lovetianci.cn</link>
+        <description>天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</description>
+        <language>en</language>
+        <pubDate>Mon, 13 Jan 2020 20:00:00 +0800</pubDate>
+        <lastBuildDate>Mon, 13 Jan 2020 20:00:00 +0800</lastBuildDate>
+        <category>技术</category>
+        <category>面试题</category>
+        <category>娱乐</category>
+        <item>
+            <guid isPermalink="true">https://lovetianci.cn/2020/01/13/hexo0113/</guid>
+            <title>Hexo文件操作</title>
+            <link>https://lovetianci.cn/2020/01/13/hexo0113/</link>
+            <category>技术</category>
+            <pubDate>Mon, 13 Jan 2020 20:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;搭建hexo静态博客难免会遇到小问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭建hexo静态博客难免会遇到小问题&#34;&gt;#&lt;/a&gt; 搭建 Hexo 静态博客难免会遇到小问题&lt;/h2&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h3 id=&#34;今天讲一下遇到的一些小坑以及解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#今天讲一下遇到的一些小坑以及解决办法&#34;&gt;#&lt;/a&gt; 今天讲一下遇到的一些小坑，以及解决办法&lt;/h3&gt;
+&lt;h3 id=&#34;通常博客里面会有一些其他小页面不是由hexo生成的页面例如life文件夹&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#通常博客里面会有一些其他小页面不是由hexo生成的页面例如life文件夹&#34;&gt;#&lt;/a&gt; 通常博客里面会有一些其他小页面，不是由 hexo 生成的页面，例如 life 文件夹&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;file.png&#34; alt=&#34;文件目录&#34; title=&#34;文件目录&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;那么这些页面放到public文件夹内每次hexo-clean都会被清除掉&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#那么这些页面放到public文件夹内每次hexo-clean都会被清除掉&#34;&gt;#&lt;/a&gt; 那么这些页面放到 public 文件夹内，每次 hexo clean 都会被清除掉&lt;/h3&gt;
+&lt;h3 id=&#34;然后也不会上传到git那么这个应该怎么解决呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后也不会上传到git那么这个应该怎么解决呢&#34;&gt;#&lt;/a&gt; 然后也不会上传到 git，那么这个应该怎么解决呢&lt;/h3&gt;
+&lt;h3 id=&#34;其实直接把文件夹拖到hexo下面的source下面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#其实直接把文件夹拖到hexo下面的source下面&#34;&gt;#&lt;/a&gt; 其实直接把文件夹拖到 hexo 下面的 source 下面&lt;/h3&gt;
+&lt;h3 id=&#34;跟_posts文件夹同级就行了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#跟_posts文件夹同级就行了&#34;&gt;#&lt;/a&gt; 跟_posts 文件夹同级就行了&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;file2.png&#34; alt=&#34;文件目录&#34; title=&#34;文件目录&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;这样的话每次生成和上传就都会带上这个文件夹了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这样的话每次生成和上传就都会带上这个文件夹了&#34;&gt;#&lt;/a&gt; 这样的话每次生成和上传就都会带上这个文件夹了&lt;/h3&gt;
+&lt;h3 id=&#34;但是又遇到一个新问题这是单独的页面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#但是又遇到一个新问题这是单独的页面&#34;&gt;#&lt;/a&gt; 但是又遇到一个新问题，这是单独的页面&lt;/h3&gt;
+&lt;h3 id=&#34;每次重新生成都会渲染上hexo的主题样式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#每次重新生成都会渲染上hexo的主题样式&#34;&gt;#&lt;/a&gt; 每次重新生成都会渲染上 hexo 的主题样式&lt;/h3&gt;
+&lt;h3 id=&#34;会导致这个单独的页面内容跑版怎么办呢&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#会导致这个单独的页面内容跑版怎么办呢&#34;&gt;#&lt;/a&gt; 会导致这个单独的页面内容跑版，怎么办呢&lt;/h3&gt;
+&lt;h3 id=&#34;其实很简单找到_configyml下面的skip_render&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#其实很简单找到_configyml下面的skip_render&#34;&gt;#&lt;/a&gt; 其实很简单，找到_config.yml 下面的 skip_render&lt;/h3&gt;
+&lt;h3 id=&#34;改成这个样子life为你的文件夹名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#改成这个样子life为你的文件夹名&#34;&gt;#&lt;/a&gt; 改成这个样子，life 为你的文件夹名&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;code.png&#34; alt=&#34;_config.yml&#34; title=&#34;_config.yml&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;这样就大功告成了&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这样就大功告成了&#34;&gt;#&lt;/a&gt; 这样就大功告成了！！！&lt;/h3&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://lovetianci.cn/2020/01/12/hexo0112/</guid>
+            <title>Hexo安装与部署</title>
+            <link>https://lovetianci.cn/2020/01/12/hexo0112/</link>
+            <category>技术</category>
+            <pubDate>Sun, 12 Jan 2020 12:00:00 +0800</pubDate>
+            <description><![CDATA[ &lt;h2 id=&#34;打开git-bash输入以下代码安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开git-bash输入以下代码安装hexo&#34;&gt;#&lt;/a&gt; 打开 Git Bash，输入以下代码安装 hexo&lt;/h2&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install -g hexo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;安装完成在任意盘创建文件夹例如dhexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装完成在任意盘创建文件夹例如dhexo&#34;&gt;#&lt;/a&gt; 安装完成在任意盘创建文件夹，例如 D:\hexo&lt;/h3&gt;
+&lt;h3 id=&#34;再右击打开git-bash输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#再右击打开git-bash输入&#34;&gt;#&lt;/a&gt; 再右击打开 Git Bash，输入&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ cd D:\hexo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ hexo init&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;hexo会自动下载一些文件到这个目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo会自动下载一些文件到这个目录&#34;&gt;#&lt;/a&gt; hexo 会自动下载一些文件到这个目录&lt;/h3&gt;
+&lt;h3 id=&#34;然后继续输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后继续输入&#34;&gt;#&lt;/a&gt; 然后继续输入&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ npm install hexo-deployer-git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;img data-src=&#34;file.png&#34; alt=&#34;文件目录&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;这个是因为等下提交代码需要此插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这个是因为等下提交代码需要此插件&#34;&gt;#&lt;/a&gt; 这个是因为等下提交代码需要此插件&lt;/h3&gt;
+&lt;h3 id=&#34;现在生成网站并预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#现在生成网站并预览&#34;&gt;#&lt;/a&gt; 现在生成网站并预览&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览&#34;&gt;#&lt;/a&gt; 进入浏览器输入&lt;span class=&#34;exturl&#34; data-url=&#34;bG9jYWxob3N0OjQwMDA=&#34;&gt; localhost:4000&lt;/span&gt; 访问你的网站吧，Ctrl+C 停止预览&lt;/h3&gt;
+&lt;h3 id=&#34;在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面&#34;&gt;#&lt;/a&gt; 在网上下一个主题然后放进 hexo 文件夹下面的 theme 文件夹里面&lt;/h3&gt;
+&lt;h3 id=&#34;修改hexo文件夹中_configyml文件里面的theme属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改hexo文件夹中_configyml文件里面的theme属性&#34;&gt;#&lt;/a&gt; 修改 hexo 文件夹中_config.yml 文件里面的 theme 属性&lt;/h3&gt;
+&lt;h3 id=&#34;将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览&#34;&gt;#&lt;/a&gt; 将原来的 landscape 改为你所下载主题的文件夹名，打开 Git Bash 重新生成并预览&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ hexo s&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;你会发现页面已经适应了你的主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#你会发现页面已经适应了你的主题&#34;&gt;#&lt;/a&gt; 你会发现页面已经适应了你的主题&lt;/h3&gt;
+&lt;h3 id=&#34;之后打开hexo目录下的_configyml最后一段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#之后打开hexo目录下的_configyml最后一段&#34;&gt;#&lt;/a&gt; 之后打开 hexo 目录下的_config.yml 最后一段&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;git.png&#34; alt=&#34;_config.yml&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;绑定你的github项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#绑定你的github项目地址&#34;&gt;#&lt;/a&gt; 绑定你的 GitHub 项目地址&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo clean&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ hexo g&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;$ hexo d&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;以上代码分别是清除public文件夹重新生成和提交代码到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以上代码分别是清除public文件夹重新生成和提交代码到github&#34;&gt;#&lt;/a&gt; 以上代码分别是清除 public 文件夹，重新生成，和提交代码到 GitHub&lt;/h3&gt;
+&lt;h3 id=&#34;然后上github你会发现存储库里面的文件都是public文件夹下面的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后上github你会发现存储库里面的文件都是public文件夹下面的&#34;&gt;#&lt;/a&gt; 然后上 GitHub 你会发现存储库里面的文件都是 public 文件夹下面的&lt;/h3&gt;
+&lt;h3 id=&#34;每次提交代码都只会提交此文件夹下的代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#每次提交代码都只会提交此文件夹下的代码&#34;&gt;#&lt;/a&gt; 每次提交代码都只会提交此文件夹下的代码&lt;/h3&gt;
+&lt;h3 id=&#34;本期hexo安装与部署就到这里下期见&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本期hexo安装与部署就到这里下期见&#34;&gt;#&lt;/a&gt; 本期 hexo 安装与部署就到这里，下期见&lt;/h3&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

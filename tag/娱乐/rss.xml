@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>TianciBlog • Posts by &#34;娱乐&#34; tag</title>
+        <link>https://lovetianci.cn</link>
+        <description>天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</description>
+        <language>en</language>
+        <pubDate>Thu, 09 Jan 2020 22:22:22 +0800</pubDate>
+        <lastBuildDate>Thu, 09 Jan 2020 22:22:22 +0800</lastBuildDate>
+        <category>技术</category>
+        <category>面试题</category>
+        <category>娱乐</category>
+        <item>
+            <guid isPermalink="true">https://lovetianci.cn/2020/01/09/update/</guid>
+            <title>版本更新</title>
+            <link>https://lovetianci.cn/2020/01/09/update/</link>
+            <category>娱乐</category>
+            <pubDate>Thu, 09 Jan 2020 22:22:22 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;全部更新介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#全部更新介绍&#34;&gt;#&lt;/a&gt; 全部更新介绍&lt;/h1&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;2020-01-08更换网站faviconico&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-08更换网站faviconico&#34;&gt;#&lt;/a&gt; 2020-01-08 更换网站 favicon.ico&lt;/h2&gt;
+&lt;h2 id=&#34;2020-01-09去除github评论功能模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-09去除github评论功能模块&#34;&gt;#&lt;/a&gt; 2020-01-09 去除 GitHub 评论功能模块&lt;/h2&gt;
+&lt;h2 id=&#34;2020-01-10添加生活模块发布一些生活动态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-10添加生活模块发布一些生活动态&#34;&gt;#&lt;/a&gt; 2020-01-10 添加生活模块，发布一些生活动态&lt;/h2&gt;
+&lt;h2 id=&#34;2020-01-12修改基础样式不透明度以及背景图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-12修改基础样式不透明度以及背景图&#34;&gt;#&lt;/a&gt; 2020-01-12 修改基础样式不透明度以及背景图&lt;/h2&gt;
+&lt;h2 id=&#34;2020-01-22添加在线音乐播放器页面缓解压力必备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-22添加在线音乐播放器页面缓解压力必备&#34;&gt;#&lt;/a&gt; 2020-01-22 添加在线音乐播放器页面，缓解压力必备&lt;/h2&gt;
+&lt;h2 id=&#34;2020-02-19添加404页面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-02-19添加404页面&#34;&gt;#&lt;/a&gt; 2020-02-19 添加 404 页面&lt;/h2&gt;
+&lt;h2 id=&#34;2020-04-06添加点击显示爱心&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-06添加点击显示爱心&#34;&gt;#&lt;/a&gt; 2020-04-06 添加点击显示爱心&lt;/h2&gt;
+&lt;h2 id=&#34;2020-04-06添加板娘&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-06添加板娘&#34;&gt;#&lt;/a&gt; 2020-04-06 添加板娘&lt;/h2&gt;
+&lt;h2 id=&#34;2020-04-08更换新主题原主题停止更新原古风主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-08更换新主题原主题停止更新原古风主题&#34;&gt;#&lt;/a&gt; 2020-04-08 更换新主题，原主题停止更新，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5sb3ZldGlhbmNpLmNuLw==&#34;&gt;原古风主题&lt;/span&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2020-04-21将部分静态资源挂载到cdn提升网站打开速度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-21将部分静态资源挂载到cdn提升网站打开速度&#34;&gt;#&lt;/a&gt; 2020-04-21 将部分静态资源挂载到 cdn，提升网站打开速度&lt;/h2&gt;
+&lt;h2 id=&#34;2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;#&lt;/a&gt; 2020-04-22 更换部分轮播图和 JS 地址（master 分支 CDN）&lt;/h2&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

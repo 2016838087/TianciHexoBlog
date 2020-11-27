@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://lovetianci.cn</id>
+    <title>TianciBlog • Posts by &#34;sql&#34; category</title>
+    <link href="https://lovetianci.cn" />
+    <updated>2020-05-11T09:40:00.000Z</updated>
+    <category term="技术" />
+    <category term="面试题" />
+    <category term="娱乐" />
+    <entry>
+        <id>https://lovetianci.cn/2020/05/11/mysql0513/</id>
+        <title>MySQL和SQL Server存储过程</title>
+        <link rel="alternate" href="https://lovetianci.cn/2020/05/11/mysql0513/"/>
+        <content type="html">&lt;h1 id=&#34;记录一下数据库存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下数据库存储过程&#34;&gt;#&lt;/a&gt; 记录一下数据库存储过程&lt;/h1&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h3 id=&#34;mysql创建带条件查询的存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql创建带条件查询的存储过程&#34;&gt;#&lt;/a&gt; MySQL 创建带条件查询的存储过程&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;DELIMITER $$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CREATE&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PROCEDURE &amp;#96;数据库名&amp;#96;.&amp;#96;存储过程名&amp;#96;(IN 自定义参数 VARCHAR(200))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    BEGIN&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	SELECT * FROM 表名 WHERE 字段 &amp;#x3D; 自定义参数;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    END$$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;DELIMITER ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;调用并传参&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#调用并传参&#34;&gt;#&lt;/a&gt; 调用并传参&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CALL 存储过程名(&amp;#39;参数值&amp;#39;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;删除存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除存储过程&#34;&gt;#&lt;/a&gt; 删除存储过程&lt;/h3&gt;
+&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;DROP PROCEDURE 存储过程名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;sql-server创建带条件查询的存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql-server创建带条件查询的存储过程&#34;&gt;#&lt;/a&gt; SQL Server 创建带条件查询的存储过程&lt;/h3&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;create&lt;/span&gt; proc 存储过程名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@自定义参数 &lt;span class=&#34;built_in&#34;&gt;varchar&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;200&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表名 &lt;span class=&#34;keyword&#34;&gt;where&lt;/span&gt; 字段=@自定义参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;go&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;调用并传参-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#调用并传参-2&#34;&gt;#&lt;/a&gt; 调用并传参&lt;/h3&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;EXEC 存储过程名 &#39;参数值&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;删除存储过程-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除存储过程-2&#34;&gt;#&lt;/a&gt; 删除存储过程&lt;/h3&gt;
+&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;drop&lt;/span&gt; proc 存储过程名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+        <category term="技术" />
+        <updated>2020-05-11T09:40:00.000Z</updated>
+    </entry>
+    <entry>
+        <id>https://lovetianci.cn/2020/04/14/mysql0414/</id>
+        <title>MVC连接MySQL教程</title>
+        <link rel="alternate" href="https://lovetianci.cn/2020/04/14/mysql0414/"/>
+        <content type="html">&lt;h2 id=&#34;记录一下mvcef连接mysql数据库需要安装的插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下mvcef连接mysql数据库需要安装的插件&#34;&gt;#&lt;/a&gt; 记录一下 MVC+EF 连接 MySQL 数据库需要安装的插件&lt;/h2&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h3 id=&#34;准备以下文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#准备以下文件&#34;&gt;#&lt;/a&gt; 准备以下文件&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&#34;mysql-connector-net-6.9.12.msi&#34; title=&#34;下载地址&#34;&gt;点击下载：mysql-connector-net-6.9.12.msi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;mysql-for-visualstudio-1.2.8.msi&#34; title=&#34;下载地址&#34;&gt;点击下载：mysql-for-visualstudio-1.2.8.msi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;MySQL Data 和 MySQL Data Entity（NuGet 进行安装，这边装的版本都是 6.9.12）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;在model文件夹右击添加新建项选择adonet实体数据模型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在model文件夹右击添加新建项选择adonet实体数据模型&#34;&gt;#&lt;/a&gt; 在 model 文件夹右击添加新建项，选择 ADO.NET 实体数据模型&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;model.png&#34; alt=&#34;&amp;quot;选择ADO.NET&amp;quot;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;选择来自数据库的ef设计器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择来自数据库的ef设计器&#34;&gt;#&lt;/a&gt; 选择来自数据库的 EF 设计器&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;from.png&#34; alt=&#34;&amp;quot;选择内容&amp;quot;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;新建连接更改数据源选择mysql-database连接mysql服务器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建连接更改数据源选择mysql-database连接mysql服务器&#34;&gt;#&lt;/a&gt; 新建连接，更改数据源，选择 MySQL Database，连接 MySQL 服务器&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;database.png&#34; alt=&#34;&amp;quot;连接数据库&amp;quot;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;注意这里如果下一步时出现闪退则要检查mysql-data和mysql-data-entity版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注意这里如果下一步时出现闪退则要检查mysql-data和mysql-data-entity版本&#34;&gt;#&lt;/a&gt; 注意：这里如果下一步时，出现闪退，则要检查 MySQL Data 和 MySQL Data Entity 版本。&lt;/h3&gt;
+&lt;h3 id=&#34;选择所有表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择所有表&#34;&gt;#&lt;/a&gt; 选择所有表&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;table.png&#34; alt=&#34;&amp;quot;选择需要的表&amp;quot;&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;然后点击完成即可生成&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后点击完成即可生成&#34;&gt;#&lt;/a&gt; 然后点击完成即可生成&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;modelentity.png&#34; alt=&#34;&amp;quot;最后查看模型&amp;quot;&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="技术" />
+        <updated>2020-04-14T08:16:16.000Z</updated>
+    </entry>
+</feed>
