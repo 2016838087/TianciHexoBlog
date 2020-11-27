@@ -1,9 +1,16 @@
 ---
 title: C#理论面试题
 date: 2020-03-06 13:14:20
-categories: .NET #分类
+categories: DotNET #分类
 tags: ['面试题'] #标签
+author: Tianci #发帖人
+avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg #头像地址
+authorLink: / #头像链接
+authorAbout: 不会编程的懒羊羊
+description: C#基础理论知识
+photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg #背景图
 ---
+
 ## 这次的面试题大多为理论知识
 <!-- more -->
 ## 1. 数组有没有length()方法，String有没有length()方法？

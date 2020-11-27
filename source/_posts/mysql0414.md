@@ -3,6 +3,12 @@ title: MVC连接MySQL教程
 date: 2020-04-14 16:16:16
 categories: SQL
 tags: ['技术']
+author: Tianci
+avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg
+authorLink: /
+authorAbout: 不会编程的懒羊羊
+description: MVC5+EF6+MySQL连接
+photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg
 ---
 ## 记录一下MVC+EF连接MySQL数据库需要安装的插件
 <!-- more -->

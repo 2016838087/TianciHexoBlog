@@ -27,4 +27,9 @@
     max-width: 100%;
     border-width: 5px;
   }
+  /* 添加视频播放 */
+  .mood-item .picture video{
+    max-width: 100%;
+    border-width: 5px;
+  }
 }

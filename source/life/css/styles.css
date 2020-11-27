@@ -1,6 +1,6 @@
 /* 返回按钮 */
 .toolbar-open {
-  background: url(../images/home.png) no-repeat center rgba(0,0,0,0.6);
+  background: url(https://cdn.jsdelivr.net/gh/2016838087/TianciLife@master/life/images/home.png) no-repeat center rgba(0,0,0,0.6);
   background-size: 20px;
   width: 40px;
   height: 40px;
@@ -211,7 +211,7 @@ body{
 .mood-wrapper{
   width: 100%;
   height: 100vh;
-  background-image: url(../images/mood_bg.jpg);
+  background-image: url(https://cdn.jsdelivr.net/gh/2016838087/TianciLife@master/life/images/mood_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right bottom;
@@ -312,6 +312,15 @@ body{
   transform:rotate(-9deg) scale(0.9)
 }
 .mood-item .picture img{
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 6px;
+  border: 10px solid #fff;
+  box-shadow: 0 0 5px #448AFF;
+}
+/* 添加视频播放 */
+.mood-item .picture video{
   display: block;
   margin: 0 auto;
   max-width: 500px;
