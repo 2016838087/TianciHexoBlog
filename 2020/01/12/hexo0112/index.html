@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -64,11 +64,11 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2020-01-12 12:00:00">
+  <span class="item" title="创建时间：2020-01-12 12:00:00">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
-    <span class="text">Posted on</span>
+    <span class="text">发表于</span>
     <time itemprop="dateCreated datePublished" datetime="2020-01-12T12:00:00+08:00">2020-01-12</time>
   </span>
 </div>
@@ -79,7 +79,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <nav id="nav">
   <div class="inner">
     <div class="toggle">
-      <div class="lines" aria-label="Toggle navigation bar">
+      <div class="lines" aria-label="切换导航栏">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -93,7 +93,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <i class="ic i-sun"></i>
       </li>
       <li class="item search">
-        <i class="ic i-search"></i>
+        
       </li>
     </ul>
   </div>
@@ -101,7 +101,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
       </div>
       <div id="imgs" class="pjax">
-          <img src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+        </ul>
       </div>
     </header>
     <div id="waves">
@@ -125,18 +132,18 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Hexo/" itemprop="item" rel="index" title="In Hexo"><span itemprop="name">Hexo</span></a>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Hexo/" itemprop="item" rel="index" title="分类于 Hexo"><span itemprop="name">Hexo</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
-    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
   <link itemprop="mainEntityOfPage" href="https://lovetianci.cn/2020/01/12/hexo0112/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="image" content="/images/tianci.jpg">
     <meta itemprop="name" content="Tianci">
-    <meta itemprop="description" content="天赐博客, 天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活">
+    <meta itemprop="description" content="天赐博客, 一身清贫怎敢入繁华<br>两袖清风岂能误佳人">
   </span>
 
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -145,33 +152,41 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <div class="body md" itemprop="articleBody">
     
-      <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          <img data-src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg" itemprop="contentUrl">
-      </div>
 
     <h2 id="打开git-bash输入以下代码安装hexo"><a class="markdownIt-Anchor" href="#打开git-bash输入以下代码安装hexo">#</a> 打开 Git Bash，输入以下代码安装 hexo</h2>
 <a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
+<pre><code>$ npm install -g hexo
+</code></pre>
 <h3 id="安装完成在任意盘创建文件夹例如dhexo"><a class="markdownIt-Anchor" href="#安装完成在任意盘创建文件夹例如dhexo">#</a> 安装完成在任意盘创建文件夹，例如 D:\hexo</h3>
 <h3 id="再右击打开git-bash输入"><a class="markdownIt-Anchor" href="#再右击打开git-bash输入">#</a> 再右击打开 Git Bash，输入</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd D:\hexo</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
+<pre><code>$ cd D:\hexo
+$ hexo init
+</code></pre>
 <h3 id="hexo会自动下载一些文件到这个目录"><a class="markdownIt-Anchor" href="#hexo会自动下载一些文件到这个目录">#</a> hexo 会自动下载一些文件到这个目录</h3>
 <h3 id="然后继续输入"><a class="markdownIt-Anchor" href="#然后继续输入">#</a> 然后继续输入</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<pre><code>$ npm install hexo-deployer-git
+</code></pre>
 <p><img data-src="file.png" alt="文件目录"></p>
 <h3 id="这个是因为等下提交代码需要此插件"><a class="markdownIt-Anchor" href="#这个是因为等下提交代码需要此插件">#</a> 这个是因为等下提交代码需要此插件</h3>
 <h3 id="现在生成网站并预览"><a class="markdownIt-Anchor" href="#现在生成网站并预览">#</a> 现在生成网站并预览</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<pre><code>$ hexo g
+$ hexo s
+</code></pre>
 <h3 id="进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览"><a class="markdownIt-Anchor" href="#进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览">#</a> 进入浏览器输入<span class="exturl" data-url="bG9jYWxob3N0OjQwMDA="> localhost:4000</span> 访问你的网站吧，Ctrl+C 停止预览</h3>
 <h3 id="在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面"><a class="markdownIt-Anchor" href="#在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面">#</a> 在网上下一个主题然后放进 hexo 文件夹下面的 theme 文件夹里面</h3>
 <h3 id="修改hexo文件夹中_configyml文件里面的theme属性"><a class="markdownIt-Anchor" href="#修改hexo文件夹中_configyml文件里面的theme属性">#</a> 修改 hexo 文件夹中_config.yml 文件里面的 theme 属性</h3>
 <h3 id="将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览"><a class="markdownIt-Anchor" href="#将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览">#</a> 将原来的 landscape 改为你所下载主题的文件夹名，打开 Git Bash 重新生成并预览</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
+<pre><code>$ hexo g
+$ hexo s
+</code></pre>
 <h3 id="你会发现页面已经适应了你的主题"><a class="markdownIt-Anchor" href="#你会发现页面已经适应了你的主题">#</a> 你会发现页面已经适应了你的主题</h3>
 <h3 id="之后打开hexo目录下的_configyml最后一段"><a class="markdownIt-Anchor" href="#之后打开hexo目录下的_configyml最后一段">#</a> 之后打开 hexo 目录下的_config.yml 最后一段</h3>
 <p><img data-src="git.png" alt="_config.yml"></p>
 <h3 id="绑定你的github项目地址"><a class="markdownIt-Anchor" href="#绑定你的github项目地址">#</a> 绑定你的 GitHub 项目地址</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
+<pre><code>$ hexo clean
+$ hexo g
+$ hexo d
+</code></pre>
 <h3 id="以上代码分别是清除public文件夹重新生成和提交代码到github"><a class="markdownIt-Anchor" href="#以上代码分别是清除public文件夹重新生成和提交代码到github">#</a> 以上代码分别是清除 public 文件夹，重新生成，和提交代码到 GitHub</h3>
 <h3 id="然后上github你会发现存储库里面的文件都是public文件夹下面的"><a class="markdownIt-Anchor" href="#然后上github你会发现存储库里面的文件都是public文件夹下面的">#</a> 然后上 GitHub 你会发现存储库里面的文件都是 public 文件夹下面的</h3>
 <h3 id="每次提交代码都只会提交此文件夹下的代码"><a class="markdownIt-Anchor" href="#每次提交代码都只会提交此文件夹下的代码">#</a> 每次提交代码都只会提交此文件夹下的代码</h3>
@@ -189,32 +204,9 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <span class="icon">
       <i class="ic i-calendar-check"></i>
     </span>
-    <span class="text">Edited on</span>
-    <time title="Modified: 2020-11-27 23:27:52" itemprop="dateModified" datetime="2020-11-27T23:27:52+08:00">2020-11-27</time>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-11-28 15:27:47" itemprop="dateModified" datetime="2020-11-28T15:27:47+08:00">2020-11-28</time>
   </span>
-</div>
-
-      
-<div class="reward">
-  <button><i class="ic i-heartbeat"></i> Donate</button>
-  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
-  <div id="qr">
-      
-      <div>
-        <img data-src="/images/wechatpay.png" alt="Tianci WeChat Pay">
-        <p>WeChat Pay</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/alipay.png" alt="Tianci Alipay">
-        <p>Alipay</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/paypal.png" alt="Tianci PayPal">
-        <p>PayPal</p>
-      </div>
-  </div>
 </div>
 
       
@@ -222,14 +214,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 <div id="copyright">
 <ul>
   <li class="author">
-    <strong>Post author:  </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
+    <strong>本文作者： </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
   </li>
   <li class="link">
-    <strong>Post link: </strong>
+    <strong>本文链接：</strong>
     <a href="https://lovetianci.cn/2020/01/12/hexo0112/" title="Hexo安装与部署">https://lovetianci.cn/2020/01/12/hexo0112/</a>
   </li>
   <li class="license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -245,8 +237,8 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <div class="item left">
       
 
-  <a href="/2020/01/09/update/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="版本更新">
-  <span class="type">Previous Post</span>
+  <a href="/2020/01/09/update/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciundwu5j20zk0m8n9e.jpg" title="版本更新">
+  <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Other</span>
   <h3>版本更新</h3>
   </a>
@@ -255,8 +247,8 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <div class="item right">
       
 
-  <a href="/2020/01/13/hexo0113/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="Hexo文件操作">
-  <span class="type">Next Post</span>
+  <a href="/2020/01/13/hexo0113/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciszlczyj20zk0m816d.jpg" title="Hexo文件操作">
+  <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Hexo</span>
   <h3>Hexo文件操作</h3>
   </a>
@@ -265,7 +257,6 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 </div>
 
   
-  <div class="wrap" id="comments"></div>
 
 
         </div>
@@ -276,39 +267,39 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <div class="panels">
     <div class="inner">
-      <div class="contents panel pjax" data-title="Contents">
+      <div class="contents panel pjax" data-title="文章目录">
           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#打开git-bash输入以下代码安装hexo"><span class="toc-number">1.</span> <span class="toc-text"># 打开 Git Bash，输入以下代码安装 hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装完成在任意盘创建文件夹例如dhexo"><span class="toc-number">1.1.</span> <span class="toc-text"># 安装完成在任意盘创建文件夹，例如 D:\hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#再右击打开git-bash输入"><span class="toc-number">1.2.</span> <span class="toc-text"># 再右击打开 Git Bash，输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hexo会自动下载一些文件到这个目录"><span class="toc-number">1.3.</span> <span class="toc-text"># hexo 会自动下载一些文件到这个目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#然后继续输入"><span class="toc-number">1.4.</span> <span class="toc-text"># 然后继续输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这个是因为等下提交代码需要此插件"><span class="toc-number">1.5.</span> <span class="toc-text"># 这个是因为等下提交代码需要此插件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#现在生成网站并预览"><span class="toc-number">1.6.</span> <span class="toc-text"># 现在生成网站并预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览"><span class="toc-number">1.7.</span> <span class="toc-text"># 进入浏览器输入 localhost:4000 访问你的网站吧，Ctrl+C 停止预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面"><span class="toc-number">1.8.</span> <span class="toc-text"># 在网上下一个主题然后放进 hexo 文件夹下面的 theme 文件夹里面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#修改hexo文件夹中_configyml文件里面的theme属性"><span class="toc-number">1.9.</span> <span class="toc-text"># 修改 hexo 文件夹中_config.yml 文件里面的 theme 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览"><span class="toc-number">1.10.</span> <span class="toc-text"># 将原来的 landscape 改为你所下载主题的文件夹名，打开 Git Bash 重新生成并预览</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#你会发现页面已经适应了你的主题"><span class="toc-number">1.11.</span> <span class="toc-text"># 你会发现页面已经适应了你的主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#之后打开hexo目录下的_configyml最后一段"><span class="toc-number">1.12.</span> <span class="toc-text"># 之后打开 hexo 目录下的_config.yml 最后一段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#绑定你的github项目地址"><span class="toc-number">1.13.</span> <span class="toc-text"># 绑定你的 GitHub 项目地址</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#以上代码分别是清除public文件夹重新生成和提交代码到github"><span class="toc-number">1.14.</span> <span class="toc-text"># 以上代码分别是清除 public 文件夹，重新生成，和提交代码到 GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#然后上github你会发现存储库里面的文件都是public文件夹下面的"><span class="toc-number">1.15.</span> <span class="toc-text"># 然后上 GitHub 你会发现存储库里面的文件都是 public 文件夹下面的</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#每次提交代码都只会提交此文件夹下的代码"><span class="toc-number">1.16.</span> <span class="toc-text"># 每次提交代码都只会提交此文件夹下的代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本期hexo安装与部署就到这里下期见"><span class="toc-number">1.17.</span> <span class="toc-text"># 本期 hexo 安装与部署就到这里，下期见</span></a></li></ol></li></ol>
       </div>
-      <div class="related panel pjax" data-title="Related">
+      <div class="related panel pjax" data-title="系列文章">
         <ul>
           <li class="active"><a href="/2020/01/12/hexo0112/" rel="bookmark" title="Hexo安装与部署">Hexo安装与部署</a></li><li><a href="/2020/01/13/hexo0113/" rel="bookmark" title="Hexo文件操作">Hexo文件操作</a></li>
         </ul>
       </div>
-      <div class="overview panel" data-title="Overview">
+      <div class="overview panel" data-title="站点概览">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="Tianci"
-      data-src="/images/avatar.jpg">
+      data-src="/images/tianci.jpg">
   <p class="name" itemprop="name">Tianci</p>
-  <div class="description" itemprop="description">天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</div>
+  <div class="description" itemprop="description">一身清贫怎敢入繁华<br>两袖清风岂能误佳人</div>
 </div>
 
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
-        <span class="name">posts</span>
+        <span class="count">18</span>
+        <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
         <span class="count">5</span>
-        <span class="name">categories</span>
+        <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
         <span class="count">3</span>
-        <span class="name">tags</span>
+        <span class="name">标签</span>
       </a>
     </div>
 </nav>
@@ -321,9 +312,30 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
   </li>
 
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
 
 </ul>
 
@@ -333,12 +345,12 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/01/09/update/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/2020/01/09/update/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/01/13/hexo0113/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/2020/01/13/hexo0113/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -354,33 +366,43 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <div class="widgets">
           
 <div class="rpost pjax">
-  <h2>Random Posts</h2>
+  <h2>随机文章</h2>
   <ul>
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Other/" title="In Other">Other</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
-    <span><a href="/2020/01/09/update/" title="版本更新">版本更新</a></span>
+    <span><a href="/2020/07/03/csharp0703/" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
 </div>
 
-    <span><a href="/2020/06/10/csharp0610/" title=".NET Core 部署IIS">.NET Core 部署IIS</a></span>
+    <span><a href="/2020/04/23/vue0423/" title="学习vue遇到的坑">学习vue遇到的坑</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
+</div>
+
+    <span><a href="/2020/01/13/hexo0113/" title="Hexo文件操作">Hexo文件操作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
     <span><a href="/2020/03/06/interview0306/" title="C#理论面试题">C#理论面试题</a></span>
@@ -390,17 +412,17 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
-    <span><a href="/2020/03/03/interview0303/" title="C#简单面试题">C#简单面试题</a></span>
+    <span><a href="/2020/01/09/update/" title="版本更新">版本更新</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
     <span><a href="/2020/02/10/csharp0210/" title="C#扩展方法">C#扩展方法</a></span>
@@ -410,17 +432,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Other/" title="In Other">Other</a>
-</div>
-
-    <span><a href="/2020/10/11/git1011/" title="Windows服务器搭建私人GitLab">Windows服务器搭建私人GitLab</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
     <span><a href="/2020/07/09/csharp0709/" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></span>
@@ -430,30 +442,30 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/SQL/" title="分类于 SQL">SQL</a>
 </div>
 
-    <span><a href="/2020/01/12/hexo0112/" title="Hexo安装与部署">Hexo安装与部署</a></span>
+    <span><a href="/2020/04/14/mysql0414/" title="MVC连接MySQL教程">MVC连接MySQL教程</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/SQL/" title="分类于 SQL">SQL</a>
 </div>
 
-    <span><a href="/2020/04/03/csharp0403/" title="C# Reamrk特性">C# Reamrk特性</a></span>
+    <span><a href="/2020/05/11/mysql0513/" title="MySQL和SQL Server存储过程">MySQL和SQL Server存储过程</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
-    <span><a href="/2020/02/03/csharp0203/" title="WebAPI全局异常处理">WebAPI全局异常处理</a></span>
+    <span><a href="/2020/01/28/ajax0128/" title="学习Ajax">学习Ajax</a></span>
   </li>
 
   </ul>
@@ -463,7 +475,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <div class="status">
   <div class="copyright">
     
-    &copy; 2010 – 
+    &copy; 
     <span itemprop="copyrightYear">2020</span>
     <span class="with-love">
       <i class="ic i-sakura rotate"></i>
@@ -471,7 +483,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <span class="author" itemprop="copyrightHolder">Tianci @ Tianciの小窝</span>
   </div>
   <div class="powered-by">
-    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+    <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8jL0ludGVncmF0ZWQvcmVjb3JkUXVlcnk=">湘ICP备19020367号-1</span>
   </div>
 </div>
 
@@ -482,15 +494,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   var LOCAL = {
     path: '2020/01/12/hexo0112/',
     favicon: {
-      show: "（●´3｀●）Goooood",
-      hide: "(´Д｀)Booooom"
+      show: "（●´3｀●）过来抱紧我！",
+      hide: "(´Д｀)不要离开我！"
     },
     search : {
-      placeholder: "Search for Posts",
-      empty: "We didn't find any results for the search: ${query}",
-      stats: "${hits} results found in ${time} ms"
-    },
-    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
     ignores : [
       function(uri) {
         return uri.includes('#');
@@ -511,5 +522,5 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 </html>

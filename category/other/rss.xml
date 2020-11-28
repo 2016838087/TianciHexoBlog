@@ -3,13 +3,13 @@
     <channel>
         <title>TianciBlog • Posts by &#34;other&#34; category</title>
         <link>https://lovetianci.cn</link>
-        <description>天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</description>
-        <language>en</language>
+        <description>一身清贫怎敢入繁华&lt;br&gt;两袖清风岂能误佳人</description>
+        <language>zh-CN</language>
         <pubDate>Sun, 11 Oct 2020 21:00:00 +0800</pubDate>
         <lastBuildDate>Sun, 11 Oct 2020 21:00:00 +0800</lastBuildDate>
         <category>技术</category>
-        <category>面试题</category>
         <category>娱乐</category>
+        <category>面试题</category>
         <item>
             <guid isPermalink="true">https://lovetianci.cn/2020/10/11/git1011/</guid>
             <title>Windows服务器搭建私人GitLab</title>
@@ -21,18 +21,40 @@
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dpdGJsaXQvZ2l0YmxpdC9yZWxlYXNlcy9kb3dubG9hZC92MS45LjEvZ2l0YmxpdC0xLjkuMS56aXA=&#34;&gt; Gitblit-1.9.1.zip&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;下载javajdk并配置环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载javajdk并配置环境&#34;&gt;#&lt;/a&gt; 下载 JavaJDK 并配置环境&lt;/h2&gt;
 &lt;h3 id=&#34;此电脑-属性-高级系统设置-环境变量-添加&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#此电脑-属性-高级系统设置-环境变量-添加&#34;&gt;#&lt;/a&gt; 此电脑 -&amp;gt; 属性 -&amp;gt; 高级系统设置 -&amp;gt; 环境变量 -&amp;gt; 添加&lt;/h3&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;变量名：JAVA_HOME&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;变量值：电脑上JDK安装的绝对路径&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;变量名：CLASSPATH&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;变量名：JAVA_HOME
+变量值：电脑上JDK安装的绝对路径
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;变量名：CLASSPATH
+变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;选择path这一列点编辑&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择path这一列点编辑&#34;&gt;#&lt;/a&gt; 选择 path 这一列点编辑&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;path.jpg&#34; alt=&#34;环境变量&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;然后新增两行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后新增两行&#34;&gt;#&lt;/a&gt; 然后新增两行&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;path2.jpg&#34; alt=&#34;环境变量&#34;&gt;&lt;/p&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt;JAVA_HOME%\bin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt;JAVA_HOME%\jre\bin&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;打开cmd输入java-version查看版本号没有错误说明安装成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开cmd输入java-version查看版本号没有错误说明安装成功&#34;&gt;#&lt;/a&gt; 打开 cmd 输入 java -version 查看版本号，没有错误说明安装成功&lt;/h3&gt;
 &lt;h3 id=&#34;打开data文件夹编辑找到defaultsproperties配置文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开data文件夹编辑找到defaultsproperties配置文件&#34;&gt;#&lt;/a&gt; 打开 data 文件夹编辑找到 defaults.properties 配置文件&lt;/h3&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt; 设置版本库的位置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;git.repositoriesFolder = 你要的路径&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt; 设置端口号&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.httpPort = 端口号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;bash&#34;&gt; 设置ip地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.httpBindInterface = 本机ipv4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;server.certificateAlias = localhost&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;# 设置版本库的位置
+
+git.repositoriesFolder = 你要的路径
+
+# 设置端口号
+
+server.httpPort = 端口号
+
+# 设置ip地址
+
+server.httpBindInterface = 本机ipv4
+
+server.certificateAlias = localhost
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;修改installservicecmd文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改installservicecmd文件&#34;&gt;#&lt;/a&gt; 修改 installService.cmd 文件&lt;/h3&gt;
-&lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;@REM arch = x86, amd64, or ia32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SET ARCH=amd64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;@REM arch = x86, amd64, or ia32
+SET ARCH=amd64
+SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭&#34;&gt;#&lt;/a&gt; 然后在命令窗口运行 gitlab.cmd（切记 cmd 窗口不能关闭）&lt;/h3&gt;
 &lt;h3 id=&#34;最后以管理员账号登陆就可以自己添加存储库了然后自行拉取提交推送&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#最后以管理员账号登陆就可以自己添加存储库了然后自行拉取提交推送&#34;&gt;#&lt;/a&gt; 最后以管理员账号登陆，就可以自己添加存储库了，然后自行拉取提交推送&lt;/h3&gt;
  ]]></description>
@@ -73,6 +95,39 @@
 &lt;h2 id=&#34;2020-04-21将部分静态资源挂载到cdn提升网站打开速度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-21将部分静态资源挂载到cdn提升网站打开速度&#34;&gt;#&lt;/a&gt; 2020-04-21 将部分静态资源挂载到 cdn，提升网站打开速度&lt;/h2&gt;
 &lt;h2 id=&#34;2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;#&lt;/a&gt; 2020-04-22 更换部分轮播图和 JS 地址（master 分支 CDN）&lt;/h2&gt;
  ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://lovetianci.cn/2020/01/05/first/</guid>
+            <title>博客正式上线</title>
+            <link>https://lovetianci.cn/2020/01/05/first/</link>
+            <category>娱乐</category>
+            <pubDate>Sun, 05 Jan 2020 22:22:22 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
+&lt;h2 id=&#34;tianciblog于2020-01-05正式上线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tianciblog于2020-01-05正式上线&#34;&gt;#&lt;/a&gt; TianciBlog 于 2020-01-05 正式上线&lt;/h2&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h1 id=&#34;惹不住题诗一首&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#惹不住题诗一首&#34;&gt;#&lt;/a&gt; 惹不住题诗一首&lt;/h1&gt;
+&lt;h3 id=&#34;故人西辞富士康&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#故人西辞富士康&#34;&gt;#&lt;/a&gt; 故人西辞富士康&lt;/h3&gt;
+&lt;h3 id=&#34;为学技术到蓝翔&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为学技术到蓝翔&#34;&gt;#&lt;/a&gt; 为学技术到蓝翔&lt;/h3&gt;
+&lt;h3 id=&#34;蓝翔科技包分配&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#蓝翔科技包分配&#34;&gt;#&lt;/a&gt; 蓝翔科技包分配&lt;/h3&gt;
+&lt;h3 id=&#34;分配又到富士康&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分配又到富士康&#34;&gt;#&lt;/a&gt; 分配又到富士康&lt;/h3&gt;
+&lt;h3 id=&#34;故人二辞富士康&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#故人二辞富士康&#34;&gt;#&lt;/a&gt; 故人二辞富士康&lt;/h3&gt;
+&lt;h3 id=&#34;转身就去新东方&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#转身就去新东方&#34;&gt;#&lt;/a&gt; 转身就去新东方&lt;/h3&gt;
+&lt;h3 id=&#34;苦练三年当大厨&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#苦练三年当大厨&#34;&gt;#&lt;/a&gt; 苦练三年当大厨&lt;/h3&gt;
+&lt;h3 id=&#34;做饭还在富士康&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#做饭还在富士康&#34;&gt;#&lt;/a&gt; 做饭还在富士康&lt;/h3&gt;
+&lt;h3 id=&#34;故人三辞富士康&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#故人三辞富士康&#34;&gt;#&lt;/a&gt; 故人三辞富士康&lt;/h3&gt;
+&lt;h3 id=&#34;为了生活上武当&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为了生活上武当&#34;&gt;#&lt;/a&gt; 为了生活上武当&lt;/h3&gt;
+&lt;h3 id=&#34;武当出来包分配&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#武当出来包分配&#34;&gt;#&lt;/a&gt; 武当出来包分配&lt;/h3&gt;
+&lt;h3 id=&#34;富士康里当门卫&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#富士康里当门卫&#34;&gt;#&lt;/a&gt; 富士康里当门卫&lt;/h3&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/2016838087/TianciHexoBlog@master/2020/01/05/first/ShangHai1.jpg&#34; alt=&#34;魔都上海&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/2016838087/TianciHexoBlog@master/2020/01/05/first/ShangHai2.jpg&#34; alt=&#34;夜上海&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;搞笑操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搞笑操作&#34;&gt;#&lt;/a&gt; 搞笑操作&lt;/h3&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 75%;&#34;&gt;&lt;iframe src=&#34;//player.bilibili.com/player.html?aid=43443146&amp;page=&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&#34;四杀诺手&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四杀诺手&#34;&gt;#&lt;/a&gt; 四杀诺手&lt;img data-src=&#34;https://cdn.jsdelivr.net/gh/Artitalk/Artitalk-emoji@master/daku.png&#34; alt&gt;&lt;/h3&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 75%;&#34;&gt;&lt;iframe src=&#34;//player.bilibili.com/player.html?aid=35672278&amp;page=&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&#34;无限乱斗盲僧秀1&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#无限乱斗盲僧秀1&#34;&gt;#&lt;/a&gt; 无限乱斗盲僧秀 1&lt;/h3&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 75%;&#34;&gt;&lt;iframe src=&#34;//player.bilibili.com/player.html?aid=26794340&amp;page=&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;h3 id=&#34;无限乱斗盲僧秀2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#无限乱斗盲僧秀2&#34;&gt;#&lt;/a&gt; 无限乱斗盲僧秀 2&lt;/h3&gt;
+&lt;div style=&#34;position: relative; width: 100%; height: 0; padding-bottom: 75%;&#34;&gt;&lt;iframe src=&#34;//player.bilibili.com/player.html?aid=25937987&amp;page=&#34; scrolling=&#34;no&#34; border=&#34;0&#34; frameborder=&#34;no&#34; framespacing=&#34;0&#34; allowfullscreen=&#34;true&#34; style=&#34;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&#34;&gt;&lt;/iframe&gt;&lt;/div&gt; ]]></description>
         </item>
     </channel>
 </rss>

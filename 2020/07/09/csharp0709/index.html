@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -64,11 +64,11 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2020-07-09 18:00:00">
+  <span class="item" title="创建时间：2020-07-09 18:00:00">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
-    <span class="text">Posted on</span>
+    <span class="text">发表于</span>
     <time itemprop="dateCreated datePublished" datetime="2020-07-09T18:00:00+08:00">2020-07-09</time>
   </span>
 </div>
@@ -79,7 +79,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <nav id="nav">
   <div class="inner">
     <div class="toggle">
-      <div class="lines" aria-label="Toggle navigation bar">
+      <div class="lines" aria-label="切换导航栏">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -93,7 +93,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <i class="ic i-sun"></i>
       </li>
       <li class="item search">
-        <i class="ic i-search"></i>
+        
       </li>
     </ul>
   </div>
@@ -101,7 +101,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
       </div>
       <div id="imgs" class="pjax">
-          <img src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+        </ul>
       </div>
     </header>
     <div id="waves">
@@ -125,18 +132,18 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/DotNET/" itemprop="item" rel="index" title="In DotNET"><span itemprop="name">DotNET</span></a>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/DotNET/" itemprop="item" rel="index" title="分类于 DotNET"><span itemprop="name">DotNET</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
-    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
   <link itemprop="mainEntityOfPage" href="https://lovetianci.cn/2020/07/09/csharp0709/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="image" content="/images/tianci.jpg">
     <meta itemprop="name" content="Tianci">
-    <meta itemprop="description" content="天赐博客, 天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活">
+    <meta itemprop="description" content="天赐博客, 一身清贫怎敢入繁华<br>两袖清风岂能误佳人">
   </span>
 
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -145,9 +152,6 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <div class="body md" itemprop="articleBody">
     
-      <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          <img data-src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg" itemprop="contentUrl">
-      </div>
 
     <h2 id="记录一下net"><a class="markdownIt-Anchor" href="#记录一下net">#</a> <span class="exturl" data-url="aHR0cDovL3huLS00Z3F3YTA5M2t5MDViLk5FVA==">记录一下.NET</span> Core 使用 EFCore 连接 MySQL 数据库</h2>
 <a id="more"></a>
@@ -155,14 +159,10 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 <p><img data-src="EFCore.png" alt="EFCore"></p>
 <h3 id="因为我的net"><a class="markdownIt-Anchor" href="#因为我的net">#</a> <span class="exturl" data-url="aHR0cDovL3huLS1zaXFyNHN2dWprc3UuTkVU">因为我的.NET</span> Core 是最新版本 3.1，所以这个 EFCore 我安装的也是最新版本 8.0.20</h3>
 <h3 id="第一步在配置文件appsettingsjson里面添加连接字符串"><a class="markdownIt-Anchor" href="#第一步在配置文件appsettingsjson里面添加连接字符串">#</a> 第一步在配置文件 appsettings.json 里面添加连接字符串</h3>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"ConnectionStrings"</span>: &#123;</span><br><span class="line">    <span class="string">"MySQLConnection"</span>: <span class="string">"server=本地或者线上地址;uid=用户名;pwd=密码;port=端口号;database=需要连接的数据库名称;SslMode=None"</span></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<h3 id="第二步添加数据库上下文类"><a class="markdownIt-Anchor" href="#第二步添加数据库上下文类">#</a> 第二步添加数据库上下文类</h3>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">EFCoreDbContext</span>:<span class="title">DbContext</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">virtual</span> DbSet&lt;UserInfo&gt; Users &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125; <span class="comment">//将实体类添加Context中</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">EFCoreDbContext</span>(<span class="params">DbContextOptions&lt;EFCoreDbContext&gt; options</span>) : <span class="title">base</span>(<span class="params">options</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="第三步startupcs里面的configureservices方法下面读取服务添加到容器"><a class="markdownIt-Anchor" href="#第三步startupcs里面的configureservices方法下面读取服务添加到容器">#</a> 第三步 Startup.cs 里面的 ConfigureServices 方法下面读取服务添加到容器</h3>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">services.AddDbContext&lt;EFCoreDbContext&gt;(options =&gt;</span><br><span class="line">options.UseMySQL(Configuration.GetConnectionString(<span class="string">"MySQLConnection"</span>)));</span><br></pre></td></tr></table></figure>
-<h3 id="最后在需要使用到数据库的控制器内添加构造函数初始化数据库上下文类"><a class="markdownIt-Anchor" href="#最后在需要使用到数据库的控制器内添加构造函数初始化数据库上下文类">#</a> 最后在需要使用到数据库的控制器内添加构造函数，初始化数据库上下文类</h3>
-<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 初始化数据库上下文</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">readonly</span> EFCoreDbContext _efCoreDbContext;</span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 构造及初始化类参数</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ImageController</span>(<span class="params">EFCoreDbContext coreDbContext</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  _efCoreDbContext = coreDbContext;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="最后接口通过上下文类取出相应的数据如果数据不为空则连接成功"><a class="markdownIt-Anchor" href="#最后接口通过上下文类取出相应的数据如果数据不为空则连接成功">#</a> 最后接口通过上下文类取出相应的数据，如果数据不为空则连接成功</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token string">"ConnectionStrings"</span><span class="token punctuation">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>    <span class="token string">"MySQLConnection"</span><span class="token punctuation">:</span> <span class="token string">"server=本地或者线上地址;uid=用户名;pwd=密码;port=端口号;database=需要连接的数据库名称;SslMode=None"</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="第二步添加数据库上下文类"><a class="markdownIt-Anchor" href="#第二步添加数据库上下文类">#</a> 第二步添加数据库上下文类</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">EFCoreDbContext</span><span class="token punctuation">:</span><span class="token type-list"><span class="token class-name">DbContext</span></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token keyword">public</span> <span class="token keyword">virtual</span> <span class="token return-type class-name">DbSet<span class="token punctuation">&lt;</span>UserInfo<span class="token punctuation">></span></span> Users <span class="token punctuation">&#123;</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span> <span class="token comment">// 将实体类添加 Context 中</span></pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token keyword">public</span> <span class="token function">EFCoreDbContext</span><span class="token punctuation">(</span><span class="token class-name">DbContextOptions<span class="token punctuation">&lt;</span>EFCoreDbContext<span class="token punctuation">></span></span> options<span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token keyword">base</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="第三步startupcs里面的configureservices方法下面读取服务添加到容器"><a class="markdownIt-Anchor" href="#第三步startupcs里面的configureservices方法下面读取服务添加到容器">#</a> 第三步 Startup.cs 里面的 ConfigureServices 方法下面读取服务添加到容器</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre>services<span class="token punctuation">.</span><span class="token generic-method"><span class="token function">AddDbContext</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>EFCoreDbContext<span class="token punctuation">></span></span></span><span class="token punctuation">(</span>options <span class="token operator">=></span></pre></td></tr><tr><td data-num="2"></td><td><pre>options<span class="token punctuation">.</span><span class="token function">UseMySQL</span><span class="token punctuation">(</span>Configuration<span class="token punctuation">.</span><span class="token function">GetConnectionString</span><span class="token punctuation">(</span><span class="token string">"MySQLConnection"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="最后在需要使用到数据库的控制器内添加构造函数初始化数据库上下文类"><a class="markdownIt-Anchor" href="#最后在需要使用到数据库的控制器内添加构造函数初始化数据库上下文类">#</a> 最后在需要使用到数据库的控制器内添加构造函数，初始化数据库上下文类</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">/// &lt;summary></span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">/// 初始化数据库上下文</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment">/// &lt;/summary></span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">private</span> <span class="token keyword">readonly</span> <span class="token class-name">EFCoreDbContext</span> _efCoreDbContext<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment">/// &lt;summary></span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token comment">/// 构造及初始化类参数</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment">/// &lt;/summary></span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">public</span> <span class="token function">ImageController</span><span class="token punctuation">(</span><span class="token class-name">EFCoreDbContext</span> coreDbContext<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  _efCoreDbContext <span class="token operator">=</span> coreDbContext<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="最后接口通过上下文类取出相应的数据如果数据不为空则连接成功"><a class="markdownIt-Anchor" href="#最后接口通过上下文类取出相应的数据如果数据不为空则连接成功">#</a> 最后接口通过上下文类取出相应的数据，如果数据不为空则连接成功</h3>
 
       <div class="tags">
           <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"><i class="ic i-tag"></i> 技术</a>
@@ -176,32 +176,9 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <span class="icon">
       <i class="ic i-calendar-check"></i>
     </span>
-    <span class="text">Edited on</span>
-    <time title="Modified: 2020-11-27 23:27:52" itemprop="dateModified" datetime="2020-11-27T23:27:52+08:00">2020-11-27</time>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-11-28 15:27:34" itemprop="dateModified" datetime="2020-11-28T15:27:34+08:00">2020-11-28</time>
   </span>
-</div>
-
-      
-<div class="reward">
-  <button><i class="ic i-heartbeat"></i> Donate</button>
-  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
-  <div id="qr">
-      
-      <div>
-        <img data-src="/images/wechatpay.png" alt="Tianci WeChat Pay">
-        <p>WeChat Pay</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/alipay.png" alt="Tianci Alipay">
-        <p>Alipay</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/paypal.png" alt="Tianci PayPal">
-        <p>PayPal</p>
-      </div>
-  </div>
 </div>
 
       
@@ -209,14 +186,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 <div id="copyright">
 <ul>
   <li class="author">
-    <strong>Post author:  </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
+    <strong>本文作者： </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
   </li>
   <li class="link">
-    <strong>Post link: </strong>
+    <strong>本文链接：</strong>
     <a href="https://lovetianci.cn/2020/07/09/csharp0709/" title=".NET Core WebAPI使用EFCore连接MySQL">https://lovetianci.cn/2020/07/09/csharp0709/</a>
   </li>
   <li class="license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -232,8 +209,8 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <div class="item left">
       
 
-  <a href="/2020/07/03/csharp0703/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title=".NET Core WebAPI全局异常处理">
-  <span class="type">Previous Post</span>
+  <a href="/2020/07/03/csharp0703/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title=".NET Core WebAPI全局异常处理">
+  <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> DotNET</span>
   <h3>.NET Core WebAPI全局异常处理</h3>
   </a>
@@ -242,8 +219,8 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <div class="item right">
       
 
-  <a href="/2020/10/11/git1011/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="Windows服务器搭建私人GitLab">
-  <span class="type">Next Post</span>
+  <a href="/2020/10/11/git1011/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="Windows服务器搭建私人GitLab">
+  <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Other</span>
   <h3>Windows服务器搭建私人GitLab</h3>
   </a>
@@ -252,7 +229,6 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 </div>
 
   
-  <div class="wrap" id="comments"></div>
 
 
         </div>
@@ -263,39 +239,39 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <div class="panels">
     <div class="inner">
-      <div class="contents panel pjax" data-title="Contents">
+      <div class="contents panel pjax" data-title="文章目录">
           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#记录一下net"><span class="toc-number">1.</span> <span class="toc-text"># 记录一下.NET Core 使用 EFCore 连接 MySQL 数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#首先从nuget包里面找到mysqldataentityframeworkcore进行安装"><span class="toc-number">1.1.</span> <span class="toc-text"># 首先从 nuget 包里面找到 MySQL.Data.EntityFrameworkCore 进行安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#因为我的net"><span class="toc-number">1.2.</span> <span class="toc-text"># 因为我的.NET Core 是最新版本 3.1，所以这个 EFCore 我安装的也是最新版本 8.0.20</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第一步在配置文件appsettingsjson里面添加连接字符串"><span class="toc-number">1.3.</span> <span class="toc-text"># 第一步在配置文件 appsettings.json 里面添加连接字符串</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第二步添加数据库上下文类"><span class="toc-number">1.4.</span> <span class="toc-text"># 第二步添加数据库上下文类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第三步startupcs里面的configureservices方法下面读取服务添加到容器"><span class="toc-number">1.5.</span> <span class="toc-text"># 第三步 Startup.cs 里面的 ConfigureServices 方法下面读取服务添加到容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最后在需要使用到数据库的控制器内添加构造函数初始化数据库上下文类"><span class="toc-number">1.6.</span> <span class="toc-text"># 最后在需要使用到数据库的控制器内添加构造函数，初始化数据库上下文类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#最后接口通过上下文类取出相应的数据如果数据不为空则连接成功"><span class="toc-number">1.7.</span> <span class="toc-text"># 最后接口通过上下文类取出相应的数据，如果数据不为空则连接成功</span></a></li></ol></li></ol>
       </div>
-      <div class="related panel pjax" data-title="Related">
+      <div class="related panel pjax" data-title="系列文章">
         <ul>
           <li><a href="/2020/02/03/csharp0203/" rel="bookmark" title="WebAPI全局异常处理">WebAPI全局异常处理</a></li><li><a href="/2020/02/10/csharp0210/" rel="bookmark" title="C#扩展方法">C#扩展方法</a></li><li><a href="/2020/03/03/interview0303/" rel="bookmark" title="C#简单面试题">C#简单面试题</a></li><li><a href="/2020/03/06/interview0306/" rel="bookmark" title="C#理论面试题">C#理论面试题</a></li><li><a href="/2020/04/03/csharp0403/" rel="bookmark" title="C# Reamrk特性">C# Reamrk特性</a></li><li><a href="/2020/06/10/csharp0610/" rel="bookmark" title=".NET Core 部署IIS">.NET Core 部署IIS</a></li><li><a href="/2020/07/03/csharp0703/" rel="bookmark" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></li><li class="active"><a href="/2020/07/09/csharp0709/" rel="bookmark" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></li>
         </ul>
       </div>
-      <div class="overview panel" data-title="Overview">
+      <div class="overview panel" data-title="站点概览">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="Tianci"
-      data-src="/images/avatar.jpg">
+      data-src="/images/tianci.jpg">
   <p class="name" itemprop="name">Tianci</p>
-  <div class="description" itemprop="description">天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</div>
+  <div class="description" itemprop="description">一身清贫怎敢入繁华<br>两袖清风岂能误佳人</div>
 </div>
 
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
-        <span class="name">posts</span>
+        <span class="count">18</span>
+        <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
         <span class="count">5</span>
-        <span class="name">categories</span>
+        <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
         <span class="count">3</span>
-        <span class="name">tags</span>
+        <span class="name">标签</span>
       </a>
     </div>
 </nav>
@@ -308,9 +284,30 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
   </li>
 
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
 
 </ul>
 
@@ -320,12 +317,12 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/07/03/csharp0703/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/2020/07/03/csharp0703/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/10/11/git1011/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/2020/10/11/git1011/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -341,23 +338,13 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <div class="widgets">
           
 <div class="rpost pjax">
-  <h2>Random Posts</h2>
+  <h2>随机文章</h2>
   <ul>
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/2020/04/24/vue0424/" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
     <span><a href="/2020/02/10/csharp0210/" title="C#扩展方法">C#扩展方法</a></span>
@@ -367,37 +354,17 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SQL/" title="In SQL">SQL</a>
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
 </div>
 
-    <span><a href="/2020/05/11/mysql0513/" title="MySQL和SQL Server存储过程">MySQL和SQL Server存储过程</a></span>
+    <span><a href="/2020/04/23/vue0423/" title="学习vue遇到的坑">学习vue遇到的坑</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
-</div>
-
-    <span><a href="/2020/03/06/interview0306/" title="C#理论面试题">C#理论面试题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SQL/" title="In SQL">SQL</a>
-</div>
-
-    <span><a href="/2020/04/14/mysql0414/" title="MVC连接MySQL教程">MVC连接MySQL教程</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
     <span><a href="/2020/03/03/interview0303/" title="C#简单面试题">C#简单面试题</a></span>
@@ -407,7 +374,17 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/03/06/interview0306/" title="C#理论面试题">C#理论面试题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
 </div>
 
     <span><a href="/2020/01/12/hexo0112/" title="Hexo安装与部署">Hexo安装与部署</a></span>
@@ -417,7 +394,27 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
+</div>
+
+    <span><a href="/2020/01/13/hexo0113/" title="Hexo文件操作">Hexo文件操作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
+</div>
+
+    <span><a href="/2020/04/24/vue0424/" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
     <span><a href="/2020/06/10/csharp0610/" title=".NET Core 部署IIS">.NET Core 部署IIS</a></span>
@@ -427,20 +424,20 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
-    <span><a href="/2020/07/09/csharp0709/" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></span>
+    <span><a href="/2020/10/11/git1011/" title="Windows服务器搭建私人GitLab">Windows服务器搭建私人GitLab</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
-    <span><a href="/2020/02/03/csharp0203/" title="WebAPI全局异常处理">WebAPI全局异常处理</a></span>
+    <span><a href="/2020/01/09/update/" title="版本更新">版本更新</a></span>
   </li>
 
   </ul>
@@ -450,7 +447,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <div class="status">
   <div class="copyright">
     
-    &copy; 2010 – 
+    &copy; 
     <span itemprop="copyrightYear">2020</span>
     <span class="with-love">
       <i class="ic i-sakura rotate"></i>
@@ -458,7 +455,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <span class="author" itemprop="copyrightHolder">Tianci @ Tianciの小窝</span>
   </div>
   <div class="powered-by">
-    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+    <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8jL0ludGVncmF0ZWQvcmVjb3JkUXVlcnk=">湘ICP备19020367号-1</span>
   </div>
 </div>
 
@@ -469,15 +466,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   var LOCAL = {
     path: '2020/07/09/csharp0709/',
     favicon: {
-      show: "（●´3｀●）Goooood",
-      hide: "(´Д｀)Booooom"
+      show: "（●´3｀●）过来抱紧我！",
+      hide: "(´Д｀)不要离开我！"
     },
     search : {
-      placeholder: "Search for Posts",
-      empty: "We didn't find any results for the search: ${query}",
-      stats: "${hits} results found in ${time} ms"
-    },
-    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
     ignores : [
       function(uri) {
         return uri.includes('#');
@@ -498,5 +494,5 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 </html>

@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -64,11 +64,11 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   </h1>
   
 <div class="meta">
-  <span class="item" title="Created: 2020-04-23 16:25:00">
+  <span class="item" title="创建时间：2020-04-23 16:25:00">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
-    <span class="text">Posted on</span>
+    <span class="text">发表于</span>
     <time itemprop="dateCreated datePublished" datetime="2020-04-23T16:25:00+08:00">2020-04-23</time>
   </span>
 </div>
@@ -79,7 +79,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <nav id="nav">
   <div class="inner">
     <div class="toggle">
-      <div class="lines" aria-label="Toggle navigation bar">
+      <div class="lines" aria-label="切换导航栏">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -93,7 +93,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <i class="ic i-sun"></i>
       </li>
       <li class="item search">
-        <i class="ic i-search"></i>
+        
       </li>
     </ul>
   </div>
@@ -101,7 +101,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
       </div>
       <div id="imgs" class="pjax">
-          <img src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+        </ul>
       </div>
     </header>
     <div id="waves">
@@ -125,18 +132,18 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Vue/" itemprop="item" rel="index" title="In Vue"><span itemprop="name">Vue</span></a>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Vue/" itemprop="item" rel="index" title="分类于 Vue"><span itemprop="name">Vue</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
-    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
   <link itemprop="mainEntityOfPage" href="https://lovetianci.cn/2020/04/23/vue0423/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="image" content="/images/tianci.jpg">
     <meta itemprop="name" content="Tianci">
-    <meta itemprop="description" content="天赐博客, 天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活">
+    <meta itemprop="description" content="天赐博客, 一身清贫怎敢入繁华<br>两袖清风岂能误佳人">
   </span>
 
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -145,37 +152,24 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <div class="body md" itemprop="articleBody">
     
-      <div class="gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          <img data-src="https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg" itemprop="contentUrl">
-      </div>
 
     <h2 id="入门vue第一篇"><a class="markdownIt-Anchor" href="#入门vue第一篇">#</a> 入门 Vue，第一篇</h2>
 <a id="more"></a>
 <h3 id="安装环境就不说了直接创建项目"><a class="markdownIt-Anchor" href="#安装环境就不说了直接创建项目">#</a> 安装环境就不说了，直接创建项目</h3>
 <h3 id="打开gitbash"><a class="markdownIt-Anchor" href="#打开gitbash">#</a> 打开 GitBash</h3>
 <h3 id="全局安装vue-cli"><a class="markdownIt-Anchor" href="#全局安装vue-cli">#</a> 全局安装 vue-cli</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install vue-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="创建项目"><a class="markdownIt-Anchor" href="#创建项目">#</a> 创建项目</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack <span class="string">"项目名称"</span></span><br></pre></td></tr></table></figure>
-<h3 id="进入项目文件夹"><a class="markdownIt-Anchor" href="#进入项目文件夹">#</a> 进入项目文件夹</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="string">"项目名称"</span></span><br></pre></td></tr></table></figure>
-<h3 id="安装相关依赖"><a class="markdownIt-Anchor" href="#安装相关依赖">#</a> 安装相关依赖</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install</span><br></pre></td></tr></table></figure>
-<h3 id="运行初步demo"><a class="markdownIt-Anchor" href="#运行初步demo">#</a> 运行初步 demo</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm run dev</span><br></pre></td></tr></table></figure>
-<h3 id="用vscode终端输入来安装axios"><a class="markdownIt-Anchor" href="#用vscode终端输入来安装axios">#</a> 用 vscode 终端输入来安装 axios</h3>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install axios</span><br></pre></td></tr></table></figure>
-<h3 id="在mainjs配置全局axios"><a class="markdownIt-Anchor" href="#在mainjs配置全局axios">#</a> 在 main.js 配置全局 axios</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">'axios'</span></span><br><span class="line"></span><br><span class="line">Vue.prototype.$axios = axios</span><br><span class="line"></span><br><span class="line">axios.defaults.timeout = <span class="number">5000</span>;</span><br><span class="line"></span><br><span class="line">axios.defaults.baseURL = <span class="string">'http://接口地址:端口号/'</span>;</span><br></pre></td></tr></table></figure>
-<h3 id="在config文件夹中的indexjs中找到proxytable"><a class="markdownIt-Anchor" href="#在config文件夹中的indexjs中找到proxytable">#</a> 在 config 文件夹中的 index.js 中找到 proxyTable</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>cnpm <span class="token function">install</span> vue-cli -g</pre></td></tr></table></figure><h3 id="创建项目"><a class="markdownIt-Anchor" href="#创建项目">#</a> 创建项目</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>vue init webpack <span class="token string">"项目名称"</span></pre></td></tr></table></figure><h3 id="进入项目文件夹"><a class="markdownIt-Anchor" href="#进入项目文件夹">#</a> 进入项目文件夹</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token builtin class-name">cd</span> <span class="token string">"项目名称"</span></pre></td></tr></table></figure><h3 id="安装相关依赖"><a class="markdownIt-Anchor" href="#安装相关依赖">#</a> 安装相关依赖</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>cnpm <span class="token function">install</span></pre></td></tr></table></figure><h3 id="运行初步demo"><a class="markdownIt-Anchor" href="#运行初步demo">#</a> 运行初步 demo</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>cnpm run dev</pre></td></tr></table></figure><h3 id="用vscode终端输入来安装axios"><a class="markdownIt-Anchor" href="#用vscode终端输入来安装axios">#</a> 用 vscode 终端输入来安装 axios</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>cnpm <span class="token function">install</span> axios</pre></td></tr></table></figure><h3 id="在mainjs配置全局axios"><a class="markdownIt-Anchor" href="#在mainjs配置全局axios">#</a> 在 main.js 配置全局 axios</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token class-name">Vue</span><span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$axios <span class="token operator">=</span> axios</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>timeout <span class="token operator">=</span> <span class="token number">5000</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL <span class="token operator">=</span> <span class="token string">'http://接口地址:端口号/'</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="在config文件夹中的indexjs中找到proxytable"><a class="markdownIt-Anchor" href="#在config文件夹中的indexjs中找到proxytable">#</a> 在 config 文件夹中的 index.js 中找到 proxyTable</h3>
 <h3 id="改成这样"><a class="markdownIt-Anchor" href="#改成这样">#</a> 改成这样</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">proxyTable: &#123;</span><br><span class="line">  <span class="string">'/api'</span>:&#123;</span><br><span class="line">    target:<span class="string">"http://接口地址:端口号/"</span>,<span class="comment">//接口地址</span></span><br><span class="line">    source:<span class="literal">false</span>,<span class="comment">// 如果是https接口，需要配置这个参数</span></span><br><span class="line">    changeOrigin:<span class="literal">true</span>,<span class="comment">//允许跨域</span></span><br><span class="line">    ws: <span class="literal">true</span>, <span class="comment">//打开websocket</span></span><br><span class="line">    pathRewrite:&#123;</span><br><span class="line">      <span class="string">'^/api'</span>:<span class="string">'/'</span><span class="comment">//把target用api来代替</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="然后开始调接口新建一个indexvue"><a class="markdownIt-Anchor" href="#然后开始调接口新建一个indexvue">#</a> 然后开始调接口，新建一个 index.vue</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre>proxyTable<span class="token operator">:</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token string">'/api'</span><span class="token operator">:</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    target<span class="token operator">:</span><span class="token string">"http://接口地址:端口号/"</span><span class="token punctuation">,</span><span class="token comment">// 接口地址</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    source<span class="token operator">:</span><span class="token boolean">false</span><span class="token punctuation">,</span><span class="token comment">// 如果是 https 接口，需要配置这个参数</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    changeOrigin<span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">// 允许跨域</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    ws<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">// 打开 websocket</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    pathRewrite<span class="token operator">:</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>      <span class="token string">'^/api'</span><span class="token operator">:</span><span class="token string">'/'</span><span class="token comment">// 把 target 用 api 来代替</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="然后开始调接口新建一个indexvue"><a class="markdownIt-Anchor" href="#然后开始调接口新建一个indexvue">#</a> 然后开始调接口，新建一个 index.vue</h3>
 <h3 id="在router文件夹里面的indexjs配置如下"><a class="markdownIt-Anchor" href="#在router文件夹里面的indexjs配置如下">#</a> 在 router 文件夹里面的 index.js 配置如下</h3>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> Router <span class="keyword">from</span> <span class="string">'vue-router'</span></span><br><span class="line"><span class="keyword">import</span> HelloWorld <span class="keyword">from</span> <span class="string">'@/components/HelloWorld'</span></span><br><span class="line"><span class="keyword">import</span> Index <span class="keyword">from</span> <span class="string">'@/components/Index'</span><span class="comment">//注册组件</span></span><br><span class="line"></span><br><span class="line">Vue.use(Router)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">new</span> Router(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/'</span>,</span><br><span class="line">      name: <span class="string">'HelloWorld'</span>,</span><br><span class="line">      component: HelloWorld</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      path: <span class="string">'/Index'</span>,</span><br><span class="line">      name: <span class="string">'首页'</span>,</span><br><span class="line">      component: Index</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h3 id="新页面结构如下"><a class="markdownIt-Anchor" href="#新页面结构如下">#</a> 新页面结构如下</h3>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class&#x3D;&quot;hello&quot;&gt;</span><br><span class="line">    账号：&lt;input type&#x3D;&quot;text&quot; v-model&#x3D;&quot;username&quot;&gt;&lt;br&gt;</span><br><span class="line">    密码：&lt;input type&#x3D;&quot;password&quot; v-model&#x3D;&quot;password&quot;&gt;&lt;br&gt;</span><br><span class="line">    &lt;button @click&#x3D;&quot;Login&quot;&gt;登录&lt;&#x2F;button&gt;</span><br><span class="line">  &lt;&#x2F;div&gt;</span><br><span class="line">&lt;&#x2F;template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import axios from &#39;axios&#39;</span><br><span class="line">import Qs from &#39;qs&#39;</span><br><span class="line">export default &#123;</span><br><span class="line">  name: &#39;HelloWorld&#39;,</span><br><span class="line">  data () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      username:&#39;&#39;,&#x2F;&#x2F;绑定v-model</span><br><span class="line">      password:&#39;&#39;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">      &#x2F;&#x2F;post方法</span><br><span class="line">      Login()&#123;</span><br><span class="line">        this.$axios.post(&#39;&#x2F;api&#x2F;Admin&#x2F;Login&#39;,</span><br><span class="line">        &#x2F;&#x2F;Qs.stringify将对象序列化</span><br><span class="line">        Qs.stringify(&#123;</span><br><span class="line">          UserName:this.username,&#x2F;&#x2F;参数取input框内的值</span><br><span class="line">          Password:this.password</span><br><span class="line">        &#125;),&#123;headers:&#123;&#39;Content-Type&#39;:&#39;application&#x2F;x-www-form-urlencoded&#39;&#125;&#125;).then((res)&#x3D;&gt;&#123;</span><br><span class="line">        &#x2F;&#x2F;需要注意，post方法需要加上这个headers头</span><br><span class="line">        if(res.data.code!&#x3D;0)&#123;</span><br><span class="line">          alert(res.data.res.msg);&#x2F;&#x2F;接口错误弹出接口返回信息</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">          var token&#x3D;res.data.res.data.adminToken;</span><br><span class="line">          console.log(token);&#x2F;&#x2F;输出用户token</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="没什么难点大部分时间花在了解决跨域的问题"><a class="markdownIt-Anchor" href="#没什么难点大部分时间花在了解决跨域的问题">#</a> 没什么难点，大部分时间花在了解决跨域的问题</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">import</span> Router <span class="token keyword">from</span> <span class="token string">'vue-router'</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">import</span> HelloWorld <span class="token keyword">from</span> <span class="token string">'@/components/HelloWorld'</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">import</span> Index <span class="token keyword">from</span> <span class="token string">'@/components/Index'</span><span class="token comment">// 注册组件</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre>Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Router<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  routes<span class="token operator">:</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>      path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      name<span class="token operator">:</span> <span class="token string">'HelloWorld'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      component<span class="token operator">:</span> HelloWorld</pre></td></tr><tr><td data-num="14"></td><td><pre>    <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      path<span class="token operator">:</span> <span class="token string">'/Index'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      name<span class="token operator">:</span> <span class="token string">'首页'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="18"></td><td><pre>      component<span class="token operator">:</span> Index</pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token punctuation">]</span></pre></td></tr><tr><td data-num="21"></td><td><pre><span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="新页面结构如下"><a class="markdownIt-Anchor" href="#新页面结构如下">#</a> 新页面结构如下</h3>
+<figure class="highlight javascript"><figcaption data-lang="javascript"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token operator">&lt;</span>template<span class="token operator">></span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"hello"</span><span class="token operator">></span></pre></td></tr><tr><td data-num="3"></td><td><pre>    账号：<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"text"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"username"</span><span class="token operator">></span><span class="token operator">&lt;</span>br<span class="token operator">></span></pre></td></tr><tr><td data-num="4"></td><td><pre>    密码：<span class="token operator">&lt;</span>input type<span class="token operator">=</span><span class="token string">"password"</span> v<span class="token operator">-</span>model<span class="token operator">=</span><span class="token string">"password"</span><span class="token operator">></span><span class="token operator">&lt;</span>br<span class="token operator">></span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token operator">&lt;</span>button @click<span class="token operator">=</span><span class="token string">"Login"</span><span class="token operator">></span>登录<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>template<span class="token operator">></span></pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token operator">&lt;</span>script<span class="token operator">></span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token keyword">import</span> Qs <span class="token keyword">from</span> <span class="token string">'qs'</span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>  name<span class="token operator">:</span> <span class="token string">'HelloWorld'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token function">data</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      username<span class="token operator">:</span><span class="token string">''</span><span class="token punctuation">,</span><span class="token comment">// 绑定 v-model</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      password<span class="token operator">:</span><span class="token string">''</span></pre></td></tr><tr><td data-num="18"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>  <span class="token punctuation">&#125;</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  methods<span class="token operator">:</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>      <span class="token comment">//post 方法</span></pre></td></tr><tr><td data-num="22"></td><td><pre>      <span class="token function">Login</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>        <span class="token keyword">this</span><span class="token punctuation">.</span>$axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/api/Admin/Login'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="24"></td><td><pre>        <span class="token comment">//Qs.stringify 将对象序列化</span></pre></td></tr><tr><td data-num="25"></td><td><pre>        Qs<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="26"></td><td><pre>          UserName<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>username<span class="token punctuation">,</span><span class="token comment">// 参数取 input 框内的值</span></pre></td></tr><tr><td data-num="27"></td><td><pre>          Password<span class="token operator">:</span><span class="token keyword">this</span><span class="token punctuation">.</span>password</pre></td></tr><tr><td data-num="28"></td><td><pre>        <span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">&#123;</span>headers<span class="token operator">:</span><span class="token punctuation">&#123;</span><span class="token string">'Content-Type'</span><span class="token operator">:</span><span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">&#125;</span><span class="token punctuation">&#125;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token operator">=></span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="29"></td><td><pre>        <span class="token comment">// 需要注意，post 方法需要加上这个 headers 头</span></pre></td></tr><tr><td data-num="30"></td><td><pre>        <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>code<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>          <span class="token function">alert</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>res<span class="token punctuation">.</span>msg<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 接口错误弹出接口返回信息</span></pre></td></tr><tr><td data-num="32"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="33"></td><td><pre>        <span class="token keyword">else</span><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="34"></td><td><pre>          <span class="token keyword">var</span> token<span class="token operator">=</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>res<span class="token punctuation">.</span>data<span class="token punctuation">.</span>adminToken<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>token<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// 输出用户 token</span></pre></td></tr><tr><td data-num="36"></td><td><pre>        <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="37"></td><td><pre>      <span class="token punctuation">&#125;</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="38"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="39"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="40"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="41"></td><td><pre><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">></span></pre></td></tr></table></figure><h3 id="没什么难点大部分时间花在了解决跨域的问题"><a class="markdownIt-Anchor" href="#没什么难点大部分时间花在了解决跨域的问题">#</a> 没什么难点，大部分时间花在了解决跨域的问题</h3>
 
       <div class="tags">
           <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"><i class="ic i-tag"></i> 技术</a>
@@ -189,32 +183,9 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <span class="icon">
       <i class="ic i-calendar-check"></i>
     </span>
-    <span class="text">Edited on</span>
-    <time title="Modified: 2020-11-27 23:27:52" itemprop="dateModified" datetime="2020-11-27T23:27:52+08:00">2020-11-27</time>
+    <span class="text">更新于</span>
+    <time title="修改时间：2020-11-28 16:20:39" itemprop="dateModified" datetime="2020-11-28T16:20:39+08:00">2020-11-28</time>
   </span>
-</div>
-
-      
-<div class="reward">
-  <button><i class="ic i-heartbeat"></i> Donate</button>
-  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
-  <div id="qr">
-      
-      <div>
-        <img data-src="/images/wechatpay.png" alt="Tianci WeChat Pay">
-        <p>WeChat Pay</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/alipay.png" alt="Tianci Alipay">
-        <p>Alipay</p>
-      </div>
-      
-      <div>
-        <img data-src="/images/paypal.png" alt="Tianci PayPal">
-        <p>PayPal</p>
-      </div>
-  </div>
 </div>
 
       
@@ -222,14 +193,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 <div id="copyright">
 <ul>
   <li class="author">
-    <strong>Post author:  </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
+    <strong>本文作者： </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
   </li>
   <li class="link">
-    <strong>Post link: </strong>
+    <strong>本文链接：</strong>
     <a href="https://lovetianci.cn/2020/04/23/vue0423/" title="学习vue遇到的坑">https://lovetianci.cn/2020/04/23/vue0423/</a>
   </li>
   <li class="license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
@@ -245,8 +216,8 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <div class="item left">
       
 
-  <a href="/2020/04/14/mysql0414/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="MVC连接MySQL教程">
-  <span class="type">Previous Post</span>
+  <a href="/2020/04/14/mysql0414/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey84bjtj20zk0m8hdt.jpg" title="MVC连接MySQL教程">
+  <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> SQL</span>
   <h3>MVC连接MySQL教程</h3>
   </a>
@@ -255,8 +226,8 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <div class="item right">
       
 
-  <a href="/2020/04/24/vue0424/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;gh&#x2F;2016838087&#x2F;SakuraHexoFile@master&#x2F;themes&#x2F;images&#x2F;bg.jpg" title="vue+elementui遇到的坑">
-  <span class="type">Next Post</span>
+  <a href="/2020/04/24/vue0424/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="vue+elementui遇到的坑">
+  <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>vue+elementui遇到的坑</h3>
   </a>
@@ -265,7 +236,6 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 </div>
 
   
-  <div class="wrap" id="comments"></div>
 
 
         </div>
@@ -276,39 +246,39 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <div class="panels">
     <div class="inner">
-      <div class="contents panel pjax" data-title="Contents">
+      <div class="contents panel pjax" data-title="文章目录">
           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#入门vue第一篇"><span class="toc-number">1.</span> <span class="toc-text"># 入门 Vue，第一篇</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装环境就不说了直接创建项目"><span class="toc-number">1.1.</span> <span class="toc-text"># 安装环境就不说了，直接创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打开gitbash"><span class="toc-number">1.2.</span> <span class="toc-text"># 打开 GitBash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#全局安装vue-cli"><span class="toc-number">1.3.</span> <span class="toc-text"># 全局安装 vue-cli</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建项目"><span class="toc-number">1.4.</span> <span class="toc-text"># 创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进入项目文件夹"><span class="toc-number">1.5.</span> <span class="toc-text"># 进入项目文件夹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装相关依赖"><span class="toc-number">1.6.</span> <span class="toc-text"># 安装相关依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运行初步demo"><span class="toc-number">1.7.</span> <span class="toc-text"># 运行初步 demo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用vscode终端输入来安装axios"><span class="toc-number">1.8.</span> <span class="toc-text"># 用 vscode 终端输入来安装 axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在mainjs配置全局axios"><span class="toc-number">1.9.</span> <span class="toc-text"># 在 main.js 配置全局 axios</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在config文件夹中的indexjs中找到proxytable"><span class="toc-number">1.10.</span> <span class="toc-text"># 在 config 文件夹中的 index.js 中找到 proxyTable</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#改成这样"><span class="toc-number">1.11.</span> <span class="toc-text"># 改成这样</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#然后开始调接口新建一个indexvue"><span class="toc-number">1.12.</span> <span class="toc-text"># 然后开始调接口，新建一个 index.vue</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在router文件夹里面的indexjs配置如下"><span class="toc-number">1.13.</span> <span class="toc-text"># 在 router 文件夹里面的 index.js 配置如下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#新页面结构如下"><span class="toc-number">1.14.</span> <span class="toc-text"># 新页面结构如下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#没什么难点大部分时间花在了解决跨域的问题"><span class="toc-number">1.15.</span> <span class="toc-text"># 没什么难点，大部分时间花在了解决跨域的问题</span></a></li></ol></li></ol>
       </div>
-      <div class="related panel pjax" data-title="Related">
+      <div class="related panel pjax" data-title="系列文章">
         <ul>
           <li class="active"><a href="/2020/04/23/vue0423/" rel="bookmark" title="学习vue遇到的坑">学习vue遇到的坑</a></li><li><a href="/2020/04/24/vue0424/" rel="bookmark" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></li>
         </ul>
       </div>
-      <div class="overview panel" data-title="Overview">
+      <div class="overview panel" data-title="站点概览">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="Tianci"
-      data-src="/images/avatar.jpg">
+      data-src="/images/tianci.jpg">
   <p class="name" itemprop="name">Tianci</p>
-  <div class="description" itemprop="description">天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活</div>
+  <div class="description" itemprop="description">一身清贫怎敢入繁华<br>两袖清风岂能误佳人</div>
 </div>
 
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">17</span>
-        <span class="name">posts</span>
+        <span class="count">18</span>
+        <span class="name">文章</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
         <span class="count">5</span>
-        <span class="name">categories</span>
+        <span class="name">分类</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
         <span class="count">3</span>
-        <span class="name">tags</span>
+        <span class="name">标签</span>
       </a>
     </div>
 </nav>
@@ -321,9 +291,30 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
   </li>
 
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
 
 </ul>
 
@@ -333,12 +324,12 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/2020/04/14/mysql0414/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/2020/04/14/mysql0414/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/2020/04/24/vue0424/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/2020/04/24/vue0424/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -354,73 +345,23 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <div class="widgets">
           
 <div class="rpost pjax">
-  <h2>Random Posts</h2>
+  <h2>随机文章</h2>
   <ul>
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
-    <span><a href="/2020/07/09/csharp0709/" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></span>
+    <span><a href="/2020/01/05/first/" title="博客正式上线">博客正式上线</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Other/" title="In Other">Other</a>
-</div>
-
-    <span><a href="/2020/01/28/ajax0128/" title="学习Ajax">学习Ajax</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
-</div>
-
-    <span><a href="/2020/04/03/csharp0403/" title="C# Reamrk特性">C# Reamrk特性</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/2020/04/24/vue0424/" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
-</div>
-
-    <span><a href="/2020/03/06/interview0306/" title="C#理论面试题">C#理论面试题</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SQL/" title="In SQL">SQL</a>
-</div>
-
-    <span><a href="/2020/04/14/mysql0414/" title="MVC连接MySQL教程">MVC连接MySQL教程</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Other/" title="In Other">Other</a>
+<a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
     <span><a href="/2020/10/11/git1011/" title="Windows服务器搭建私人GitLab">Windows服务器搭建私人GitLab</a></span>
@@ -430,17 +371,57 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="In DotNET">DotNET</a>
+<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
 </div>
 
-    <span><a href="/2020/03/03/interview0303/" title="C#简单面试题">C#简单面试题</a></span>
+    <span><a href="/2020/01/12/hexo0112/" title="Hexo安装与部署">Hexo安装与部署</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SQL/" title="In SQL">SQL</a>
+<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
+</div>
+
+    <span><a href="/2020/01/13/hexo0113/" title="Hexo文件操作">Hexo文件操作</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
+</div>
+
+    <span><a href="/2020/04/23/vue0423/" title="学习vue遇到的坑">学习vue遇到的坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
+</div>
+
+    <span><a href="/2020/04/24/vue0424/" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/02/10/csharp0210/" title="C#扩展方法">C#扩展方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SQL/" title="分类于 SQL">SQL</a>
 </div>
 
     <span><a href="/2020/05/11/mysql0513/" title="MySQL和SQL Server存储过程">MySQL和SQL Server存储过程</a></span>
@@ -450,10 +431,20 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
-    <span><a href="/2020/01/13/hexo0113/" title="Hexo文件操作">Hexo文件操作</a></span>
+    <span><a href="/2020/03/06/interview0306/" title="C#理论面试题">C#理论面试题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Other/" title="分类于 Other">Other</a>
+</div>
+
+    <span><a href="/2020/01/28/ajax0128/" title="学习Ajax">学习Ajax</a></span>
   </li>
 
   </ul>
@@ -463,7 +454,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
         <div class="status">
   <div class="copyright">
     
-    &copy; 2010 – 
+    &copy; 
     <span itemprop="copyrightYear">2020</span>
     <span class="with-love">
       <i class="ic i-sakura rotate"></i>
@@ -471,7 +462,7 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
     <span class="author" itemprop="copyrightHolder">Tianci @ Tianciの小窝</span>
   </div>
   <div class="powered-by">
-    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+    <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8jL0ludGVncmF0ZWQvcmVjb3JkUXVlcnk=">湘ICP备19020367号-1</span>
   </div>
 </div>
 
@@ -482,15 +473,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
   var LOCAL = {
     path: '2020/04/23/vue0423/',
     favicon: {
-      show: "（●´3｀●）Goooood",
-      hide: "(´Д｀)Booooom"
+      show: "（●´3｀●）过来抱紧我！",
+      hide: "(´Д｀)不要离开我！"
     },
     search : {
-      placeholder: "Search for Posts",
-      empty: "We didn't find any results for the search: ${query}",
-      stats: "${hits} results found in ${time} ms"
-    },
-    valine: true,fancybox: true,copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
     ignores : [
       function(uri) {
         return uri.includes('#');
@@ -511,5 +501,5 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</body>
 </html>

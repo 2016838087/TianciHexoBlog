@@ -5,8 +5,8 @@
     <link href="https://lovetianci.cn" />
     <updated>2020-05-11T09:40:00.000Z</updated>
     <category term="技术" />
-    <category term="面试题" />
     <category term="娱乐" />
+    <category term="面试题" />
     <entry>
         <id>https://lovetianci.cn/2020/05/11/mysql0513/</id>
         <title>MySQL和SQL Server存储过程</title>
@@ -14,17 +14,36 @@
         <content type="html">&lt;h1 id=&#34;记录一下数据库存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下数据库存储过程&#34;&gt;#&lt;/a&gt; 记录一下数据库存储过程&lt;/h1&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;mysql创建带条件查询的存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql创建带条件查询的存储过程&#34;&gt;#&lt;/a&gt; MySQL 创建带条件查询的存储过程&lt;/h3&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;DELIMITER $$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CREATE&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    PROCEDURE &amp;#96;数据库名&amp;#96;.&amp;#96;存储过程名&amp;#96;(IN 自定义参数 VARCHAR(200))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    BEGIN&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	SELECT * FROM 表名 WHERE 字段 &amp;#x3D; 自定义参数;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    END$$&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;DELIMITER ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;DELIMITER $$
+
+CREATE
+    PROCEDURE `数据库名`.`存储过程名`(IN 自定义参数 VARCHAR(200))
+    BEGIN
+	SELECT * FROM 表名 WHERE 字段 = 自定义参数;
+    END$$
+
+DELIMITER ;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;调用并传参&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#调用并传参&#34;&gt;#&lt;/a&gt; 调用并传参&lt;/h3&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;CALL 存储过程名(&amp;#39;参数值&amp;#39;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;CALL 存储过程名(&#39;参数值&#39;)
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;删除存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除存储过程&#34;&gt;#&lt;/a&gt; 删除存储过程&lt;/h3&gt;
-&lt;figure class=&#34;highlight plain&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;DROP PROCEDURE 存储过程名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-MySQL&#34;&gt;DROP PROCEDURE 存储过程名
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;sql-server创建带条件查询的存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql-server创建带条件查询的存储过程&#34;&gt;#&lt;/a&gt; SQL Server 创建带条件查询的存储过程&lt;/h3&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;create&lt;/span&gt; proc 存储过程名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;@自定义参数 &lt;span class=&#34;built_in&#34;&gt;varchar&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;200&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; * &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; 表名 &lt;span class=&#34;keyword&#34;&gt;where&lt;/span&gt; 字段=@自定义参数&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;go&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;create proc 存储过程名
+@自定义参数 varchar(200)
+as 
+select * from 表名 where 字段=@自定义参数
+go 
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;调用并传参-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#调用并传参-2&#34;&gt;#&lt;/a&gt; 调用并传参&lt;/h3&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;EXEC 存储过程名 &#39;参数值&#39;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;EXEC 存储过程名 &#39;参数值&#39;
+&lt;/code&gt;&lt;/pre&gt;
 &lt;h3 id=&#34;删除存储过程-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除存储过程-2&#34;&gt;#&lt;/a&gt; 删除存储过程&lt;/h3&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;drop&lt;/span&gt; proc 存储过程名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</content>
+&lt;pre&gt;&lt;code class=&#34;language-SQL&#34;&gt;drop proc 存储过程名
+&lt;/code&gt;&lt;/pre&gt;
+</content>
         <category term="技术" />
         <updated>2020-05-11T09:40:00.000Z</updated>
     </entry>
