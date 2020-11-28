@@ -1,8 +1,8 @@
 ---
 name: 简体中文
 favicon:
-  show: （●´3｀●）やれやれだぜ
-  hide: (´Д｀)大変だ！
+  show: （●´3｀●）过来抱紧我！
+  hide: (´Д｀)不要离开我！
 
 title:
   archive: 归档
@@ -22,6 +22,7 @@ menu:
   tags: 标签
   about: 关于
   search: 搜索
+  talk: 说说
 
 sidebar:
   overview: 站点概览
@@ -56,7 +57,7 @@ post:
     license_content: "本站所有文章除特别声明外，均采用 %s 许可协议。转载请注明出处！"
 
 footer:
-  powered: "基于 %s"
+  powered: "%s"
   total_views: 总访问量
   total_visitors: 总访客量
 

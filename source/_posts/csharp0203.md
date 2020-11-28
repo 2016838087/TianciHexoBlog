@@ -3,12 +3,7 @@ title: WebAPI全局异常处理
 date: 2020-02-03 21:21:21
 categories: DotNET #分类
 tags: ['技术'] #标签
-author: Tianci #发帖人
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg #头像地址
-authorLink: / #头像链接
-authorAbout: 不会编程的懒羊羊
-description: 接口异常处理
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg #背景图
+comment: false
 ---
 
 ## 记录一下WebAPI的全局异常处理

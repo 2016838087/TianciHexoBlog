@@ -3,12 +3,7 @@ title: C#理论面试题
 date: 2020-03-06 13:14:20
 categories: DotNET #分类
 tags: ['面试题'] #标签
-author: Tianci #发帖人
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg #头像地址
-authorLink: / #头像链接
-authorAbout: 不会编程的懒羊羊
-description: C#基础理论知识
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg #背景图
+comment: false
 ---
 
 ## 这次的面试题大多为理论知识

@@ -3,12 +3,7 @@ title: MySQL和SQL Server存储过程
 date: 2020-05-11 17:40:00
 categories: SQL
 tags: ['技术']
-author: Tianci
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg
-authorLink: /
-authorAbout: 不会编程的懒羊羊
-description: 数据库存储过程
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg
+comment: false
 ---
 # 记录一下数据库存储过程
 <!-- more -->

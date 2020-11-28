@@ -3,12 +3,7 @@ title: .NET Core WebAPI全局异常处理
 date: 2020-07-03 16:00:00
 categories: DotNET
 tags: ['技术'] 
-author: Tianci
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg
-authorLink: /
-authorAbout: 不会编程的懒羊羊
-description: 学习.NET Core第二章
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg
+comment: false
 ---
 ## 今天记录一下.NET Core WebAPI的全局异常处理
 <!-- more -->

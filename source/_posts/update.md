@@ -3,12 +3,7 @@ title: 版本更新 #标题
 date: 2020-01-09 22:22:22
 categories: Other #分类
 tags: ['娱乐'] #文章标签
-author: Tianci #发帖人
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg #头像地址
-authorLink: / #头像链接
-authorAbout: 不会编程的懒羊羊
-description: 版本更新信息
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg #背景图
+comment: false
 ---
 
 # 全部更新介绍

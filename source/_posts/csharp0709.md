@@ -2,13 +2,8 @@
 title: .NET Core WebAPI使用EFCore连接MySQL
 date: 2020-07-09 18:00:00
 categories: DotNET
-tags: ['技术'] 
-author: Tianci
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg
-authorLink: /
-authorAbout: 不会编程的懒羊羊
-description: 学习.NET Core第三章
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg
+tags: ['技术']
+comment: false
 ---
 ## 记录一下.NET Core使用EFCore连接MySQL数据库
 <!-- more -->

@@ -3,12 +3,7 @@ title: .NET Core 部署IIS
 date: 2020-06-10 15:30:00
 categories: DotNET
 tags: ['技术'] 
-author: Tianci
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg
-authorLink: /
-authorAbout: 不会编程的懒羊羊
-description: 学习.NET Core第一章
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg
+comment: false
 ---
 ## 记录.NET Core部署IIS遇到的坑
 

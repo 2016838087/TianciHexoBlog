@@ -3,12 +3,7 @@ title: C# Reamrk特性
 date: 2020-04-03 11:11:11
 categories: DotNET #分类
 tags: ['技术'] #标签
-author: Tianci #发帖人
-avatar: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/tianci.jpg #头像地址
-authorLink: / #头像链接
-authorAbout: 不会编程的懒羊羊
-description: C#特性的原理
-photos: https://cdn.jsdelivr.net/gh/2016838087/SakuraHexoFile@master/themes/images/bg.jpg #背景图
+comment: false
 ---
 
 ## Remark特性的应用场景

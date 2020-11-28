@@ -5,10 +5,10 @@
 # Site
 title: TianciBlog
 subtitle: '天赐博客'
-description: '天赐博客,天赐个人博客,天赐个人网站,TianciBlog,记录学习与生活'
+description: '一身清贫怎敢入繁华<br>两袖清风岂能误佳人'
 keywords: '天赐博客,天赐个人博客,天赐个人网站,TianciBlog'
 author: Tianci
-language: en
+language: zh-CN
 timezone: ''
 
 # URL
@@ -29,7 +29,7 @@ archive_dir: archives #归档文件夹
 category_dir: categories #分类文件夹
 code_dir: downloads/code #Include code 文件夹
 i18n_dir: :lang #国际化（i18n）文件夹
-skip_render: [life/**,talk/**]
+skip_render: [life/**,live2d/**]
 #skip_render: life/*.html #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
 
 # Writing
@@ -46,13 +46,14 @@ post_asset_folder: true
 relative_link: false
 future: true
 highlight:
-  enable: true
+  enable: false
   line_number: true
   auto_detect: false
   tab_replace: ''
   wrap: true
   hljs: false
-
+prismjs:
+  enable: false
 # Home page setting，首页的分页数
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -95,22 +96,3 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: shoka
-
-
-# live2d:
-#   enable: true
-#   scriptFrom: local
-#   pluginRootPath: live2dw/
-#   pluginJsPath: lib/
-#   pluginModelPath: assets/
-#   tagMode: false
-#   debug: false
-#   model:
-#     # use: live2d-widget-model-haru/02
-#     use: live2d-widget-model-z16
-#   display:
-#     position: right
-#     width: 150
-#     height: 300
-#   mobile:
-#     show: false
