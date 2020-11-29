@@ -21,41 +21,14 @@
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dpdGJsaXQvZ2l0YmxpdC9yZWxlYXNlcy9kb3dubG9hZC92MS45LjEvZ2l0YmxpdC0xLjkuMS56aXA=&#34;&gt; Gitblit-1.9.1.zip&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;下载javajdk并配置环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载javajdk并配置环境&#34;&gt;#&lt;/a&gt; 下载 JavaJDK 并配置环境&lt;/h2&gt;
 &lt;h3 id=&#34;此电脑-属性-高级系统设置-环境变量-添加&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#此电脑-属性-高级系统设置-环境变量-添加&#34;&gt;#&lt;/a&gt; 此电脑 -&amp;gt; 属性 -&amp;gt; 高级系统设置 -&amp;gt; 环境变量 -&amp;gt; 添加&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;变量名：JAVA_HOME
-变量值：电脑上JDK安装的绝对路径
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;变量名：CLASSPATH
-变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;选择path这一列点编辑&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择path这一列点编辑&#34;&gt;#&lt;/a&gt; 选择 path 这一列点编辑&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;变量名：JAVA_HOME&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;变量值：电脑上JDK安装的绝对路径&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;变量名：CLASSPATH&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;变量值：.&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;%JAVA_HOME%&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;lib&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;dt.jar&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;%JAVA_HOME%&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;lib&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;tools.jar&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;选择path这一列点编辑&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择path这一列点编辑&#34;&gt;#&lt;/a&gt; 选择 path 这一列点编辑&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;path.jpg&#34; alt=&#34;环境变量&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;然后新增两行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后新增两行&#34;&gt;#&lt;/a&gt; 然后新增两行&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;path2.jpg&#34; alt=&#34;环境变量&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;%JAVA_HOME%\bin
-%JAVA_HOME%\jre\bin
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;打开cmd输入java-version查看版本号没有错误说明安装成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开cmd输入java-version查看版本号没有错误说明安装成功&#34;&gt;#&lt;/a&gt; 打开 cmd 输入 java -version 查看版本号，没有错误说明安装成功&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;%JAVA_HOME%&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;%JAVA_HOME%&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;jre&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;bin&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;打开cmd输入java-version查看版本号没有错误说明安装成功&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开cmd输入java-version查看版本号没有错误说明安装成功&#34;&gt;#&lt;/a&gt; 打开 cmd 输入 java -version 查看版本号，没有错误说明安装成功&lt;/h3&gt;
 &lt;h3 id=&#34;打开data文件夹编辑找到defaultsproperties配置文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开data文件夹编辑找到defaultsproperties配置文件&#34;&gt;#&lt;/a&gt; 打开 data 文件夹编辑找到 defaults.properties 配置文件&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;# 设置版本库的位置
-
-git.repositoriesFolder = 你要的路径
-
-# 设置端口号
-
-server.httpPort = 端口号
-
-# 设置ip地址
-
-server.httpBindInterface = 本机ipv4
-
-server.certificateAlias = localhost
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;修改installservicecmd文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改installservicecmd文件&#34;&gt;#&lt;/a&gt; 修改 installService.cmd 文件&lt;/h3&gt;
-&lt;pre&gt;&lt;code class=&#34;language-Shell&#34;&gt;@REM arch = x86, amd64, or ia32
-SET ARCH=amd64
-SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭&#34;&gt;#&lt;/a&gt; 然后在命令窗口运行 gitlab.cmd（切记 cmd 窗口不能关闭）&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 设置版本库的位置&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;git.repositoriesFolder &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 你要的路径&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 设置端口号&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;server.httpPort &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 端口号&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 设置 ip 地址&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;server.httpBindInterface &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; 本机ipv4&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;server.certificateAlias &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; localhost&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;修改installservicecmd文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改installservicecmd文件&#34;&gt;#&lt;/a&gt; 修改 installService.cmd 文件&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;@REM arch &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; x86, amd64, or ia32&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;SET &lt;span class=&#34;token assign-left variable&#34;&gt;ARCH&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;amd64&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;SET CD &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; C:&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;WebFile&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;GitLab --&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;GitLab解压后的路径&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭&#34;&gt;#&lt;/a&gt; 然后在命令窗口运行 gitlab.cmd（切记 cmd 窗口不能关闭）&lt;/h3&gt;
 &lt;h3 id=&#34;最后以管理员账号登陆就可以自己添加存储库了然后自行拉取提交推送&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#最后以管理员账号登陆就可以自己添加存储库了然后自行拉取提交推送&#34;&gt;#&lt;/a&gt; 最后以管理员账号登陆，就可以自己添加存储库了，然后自行拉取提交推送&lt;/h3&gt;
  ]]></description>
         </item>
@@ -83,6 +56,8 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
             <pubDate>Thu, 09 Jan 2020 22:22:22 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;全部更新介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#全部更新介绍&#34;&gt;#&lt;/a&gt; 全部更新介绍&lt;/h1&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;2020-11-29shoka主题作为备用博客&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-11-29shoka主题作为备用博客&#34;&gt;#&lt;/a&gt; 2020-11-29shoka 主题作为备用博客&lt;/h2&gt;
+&lt;h2 id=&#34;2020-11-28原古风主题更新至shoka挂载github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-11-28原古风主题更新至shoka挂载github-pages&#34;&gt;#&lt;/a&gt; 2020-11-28 原古风主题更新至 shoka 挂载 GitHub Pages&lt;/h2&gt;
 &lt;h2 id=&#34;2020-01-08更换网站faviconico&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-08更换网站faviconico&#34;&gt;#&lt;/a&gt; 2020-01-08 更换网站 favicon.ico&lt;/h2&gt;
 &lt;h2 id=&#34;2020-01-09去除github评论功能模块&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-09去除github评论功能模块&#34;&gt;#&lt;/a&gt; 2020-01-09 去除 GitHub 评论功能模块&lt;/h2&gt;
 &lt;h2 id=&#34;2020-01-10添加生活模块发布一些生活动态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-10添加生活模块发布一些生活动态&#34;&gt;#&lt;/a&gt; 2020-01-10 添加生活模块，发布一些生活动态&lt;/h2&gt;
@@ -91,7 +66,7 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
 &lt;h2 id=&#34;2020-02-19添加404页面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-02-19添加404页面&#34;&gt;#&lt;/a&gt; 2020-02-19 添加 404 页面&lt;/h2&gt;
 &lt;h2 id=&#34;2020-04-06添加点击显示爱心&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-06添加点击显示爱心&#34;&gt;#&lt;/a&gt; 2020-04-06 添加点击显示爱心&lt;/h2&gt;
 &lt;h2 id=&#34;2020-04-06添加板娘&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-06添加板娘&#34;&gt;#&lt;/a&gt; 2020-04-06 添加板娘&lt;/h2&gt;
-&lt;h2 id=&#34;2020-04-08更换新主题原主题停止更新原古风主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-08更换新主题原主题停止更新原古风主题&#34;&gt;#&lt;/a&gt; 2020-04-08 更换新主题，原主题停止更新，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5sb3ZldGlhbmNpLmNuLw==&#34;&gt;原古风主题&lt;/span&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2020-04-08更换新主题原古风主题停止更新&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-08更换新主题原古风主题停止更新&#34;&gt;#&lt;/a&gt; 2020-04-08 更换新主题，原古风主题停止更新&lt;/h2&gt;
 &lt;h2 id=&#34;2020-04-21将部分静态资源挂载到cdn提升网站打开速度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-21将部分静态资源挂载到cdn提升网站打开速度&#34;&gt;#&lt;/a&gt; 2020-04-21 将部分静态资源挂载到 cdn，提升网站打开速度&lt;/h2&gt;
 &lt;h2 id=&#34;2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;#&lt;/a&gt; 2020-04-22 更换部分轮播图和 JS 地址（master 分支 CDN）&lt;/h2&gt;
  ]]></description>

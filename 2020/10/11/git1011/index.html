@@ -102,12 +102,12 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -158,41 +158,14 @@ Tianciの小窝 = TianciBlog = 天赐博客</title>
 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2dpdGJsaXQvZ2l0YmxpdC9yZWxlYXNlcy9kb3dubG9hZC92MS45LjEvZ2l0YmxpdC0xLjkuMS56aXA="> Gitblit-1.9.1.zip</span></p>
 <h2 id="下载javajdk并配置环境"><a class="markdownIt-Anchor" href="#下载javajdk并配置环境">#</a> 下载 JavaJDK 并配置环境</h2>
 <h3 id="此电脑-属性-高级系统设置-环境变量-添加"><a class="markdownIt-Anchor" href="#此电脑-属性-高级系统设置-环境变量-添加">#</a> 此电脑 -&gt; 属性 -&gt; 高级系统设置 -&gt; 环境变量 -&gt; 添加</h3>
-<pre><code class="language-Shell">变量名：JAVA_HOME
-变量值：电脑上JDK安装的绝对路径
-</code></pre>
-<pre><code class="language-Shell">变量名：CLASSPATH
-变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;
-</code></pre>
-<h3 id="选择path这一列点编辑"><a class="markdownIt-Anchor" href="#选择path这一列点编辑">#</a> 选择 path 这一列点编辑</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>变量名：JAVA_HOME</pre></td></tr><tr><td data-num="2"></td><td><pre>变量值：电脑上JDK安装的绝对路径</pre></td></tr></table></figure><figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>变量名：CLASSPATH</pre></td></tr><tr><td data-num="2"></td><td><pre>变量值：.<span class="token punctuation">;</span>%JAVA_HOME%<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>dt.jar<span class="token punctuation">;</span>%JAVA_HOME%<span class="token punctuation">\</span>lib<span class="token punctuation">\</span>tools.jar<span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="选择path这一列点编辑"><a class="markdownIt-Anchor" href="#选择path这一列点编辑">#</a> 选择 path 这一列点编辑</h3>
 <p><img data-src="path.jpg" alt="环境变量"></p>
 <h3 id="然后新增两行"><a class="markdownIt-Anchor" href="#然后新增两行">#</a> 然后新增两行</h3>
 <p><img data-src="path2.jpg" alt="环境变量"></p>
-<pre><code class="language-Shell">%JAVA_HOME%\bin
-%JAVA_HOME%\jre\bin
-</code></pre>
-<h3 id="打开cmd输入java-version查看版本号没有错误说明安装成功"><a class="markdownIt-Anchor" href="#打开cmd输入java-version查看版本号没有错误说明安装成功">#</a> 打开 cmd 输入 java -version 查看版本号，没有错误说明安装成功</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>%JAVA_HOME%<span class="token punctuation">\</span>bin</pre></td></tr><tr><td data-num="2"></td><td><pre>%JAVA_HOME%<span class="token punctuation">\</span>jre<span class="token punctuation">\</span>bin</pre></td></tr></table></figure><h3 id="打开cmd输入java-version查看版本号没有错误说明安装成功"><a class="markdownIt-Anchor" href="#打开cmd输入java-version查看版本号没有错误说明安装成功">#</a> 打开 cmd 输入 java -version 查看版本号，没有错误说明安装成功</h3>
 <h3 id="打开data文件夹编辑找到defaultsproperties配置文件"><a class="markdownIt-Anchor" href="#打开data文件夹编辑找到defaultsproperties配置文件">#</a> 打开 data 文件夹编辑找到 defaults.properties 配置文件</h3>
-<pre><code class="language-Shell"># 设置版本库的位置
-
-git.repositoriesFolder = 你要的路径
-
-# 设置端口号
-
-server.httpPort = 端口号
-
-# 设置ip地址
-
-server.httpBindInterface = 本机ipv4
-
-server.certificateAlias = localhost
-</code></pre>
-<h3 id="修改installservicecmd文件"><a class="markdownIt-Anchor" href="#修改installservicecmd文件">#</a> 修改 installService.cmd 文件</h3>
-<pre><code class="language-Shell">@REM arch = x86, amd64, or ia32
-SET ARCH=amd64
-SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
-</code></pre>
-<h3 id="然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭"><a class="markdownIt-Anchor" href="#然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭">#</a> 然后在命令窗口运行 gitlab.cmd（切记 cmd 窗口不能关闭）</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># 设置版本库的位置</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>git.repositoriesFolder <span class="token operator">=</span> 你要的路径</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token comment"># 设置端口号</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>server.httpPort <span class="token operator">=</span> 端口号</pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment"># 设置 ip 地址</span></pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>server.httpBindInterface <span class="token operator">=</span> 本机ipv4</pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>server.certificateAlias <span class="token operator">=</span> localhost</pre></td></tr></table></figure><h3 id="修改installservicecmd文件"><a class="markdownIt-Anchor" href="#修改installservicecmd文件">#</a> 修改 installService.cmd 文件</h3>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>@REM arch <span class="token operator">=</span> x86, amd64, or ia32</pre></td></tr><tr><td data-num="2"></td><td><pre>SET <span class="token assign-left variable">ARCH</span><span class="token operator">=</span>amd64</pre></td></tr><tr><td data-num="3"></td><td><pre>SET CD <span class="token operator">=</span> C:<span class="token punctuation">\</span>WebFile<span class="token punctuation">\</span>GitLab --<span class="token punctuation">(</span>GitLab解压后的路径<span class="token punctuation">)</span></pre></td></tr></table></figure><h3 id="然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭"><a class="markdownIt-Anchor" href="#然后在命令窗口运行gitlabcmd切记cmd窗口不能关闭">#</a> 然后在命令窗口运行 gitlab.cmd（切记 cmd 窗口不能关闭）</h3>
 <h3 id="最后以管理员账号登陆就可以自己添加存储库了然后自行拉取提交推送"><a class="markdownIt-Anchor" href="#最后以管理员账号登陆就可以自己添加存储库了然后自行拉取提交推送">#</a> 最后以管理员账号登陆，就可以自己添加存储库了，然后自行拉取提交推送</h3>
 
       <div class="tags">
@@ -208,7 +181,7 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2020-11-28 15:27:43" itemprop="dateModified" datetime="2020-11-28T15:27:43+08:00">2020-11-28</time>
+    <time title="修改时间：2020-11-29 17:57:20" itemprop="dateModified" datetime="2020-11-29T17:57:20+08:00">2020-11-29</time>
   </span>
 </div>
 
@@ -240,7 +213,7 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
     <div class="item left">
       
 
-  <a href="/2020/07/09/csharp0709/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title=".NET Core WebAPI使用EFCore连接MySQL">
+  <a href="/2020/07/09/csharp0709/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesrnqv3j20zk0m8ava.jpg" title=".NET Core WebAPI使用EFCore连接MySQL">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> DotNET</span>
   <h3>.NET Core WebAPI使用EFCore连接MySQL</h3>
@@ -365,10 +338,10 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
 </div>
 
-    <span><a href="/2020/07/03/csharp0703/" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></span>
+    <span><a href="/2020/04/24/vue0424/" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></span>
   </li>
 
       
@@ -378,7 +351,27 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
 <a href="/categories/Other/" title="分类于 Other">Other</a>
 </div>
 
-    <span><a href="/2020/10/11/git1011/" title="Windows服务器搭建私人GitLab">Windows服务器搭建私人GitLab</a></span>
+    <span><a href="/2020/01/28/ajax0128/" title="学习Ajax">学习Ajax</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/03/06/interview0306/" title="C#理论面试题">C#理论面试题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/2020/02/10/csharp0210/" title="C#扩展方法">C#扩展方法</a></span>
   </li>
 
       
@@ -405,10 +398,10 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
-    <span><a href="/2020/04/23/vue0423/" title="学习vue遇到的坑">学习vue遇到的坑</a></span>
+    <span><a href="/2020/07/03/csharp0703/" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></span>
   </li>
 
       
@@ -418,27 +411,7 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
 <a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
-    <span><a href="/2020/07/09/csharp0709/" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
-</div>
-
-    <span><a href="/2020/02/03/csharp0203/" title="WebAPI全局异常处理">WebAPI全局异常处理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Other/" title="分类于 Other">Other</a>
-</div>
-
-    <span><a href="/2020/01/28/ajax0128/" title="学习Ajax">学习Ajax</a></span>
+    <span><a href="/2020/03/03/interview0303/" title="C#简单面试题">C#简单面试题</a></span>
   </li>
 
       
@@ -455,10 +428,10 @@ SET CD = C:\WebFile\GitLab --(GitLab解压后的路径)
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
 </div>
 
-    <span><a href="/2020/01/13/hexo0113/" title="Hexo文件操作">Hexo文件操作</a></span>
+    <span><a href="/2020/06/10/csharp0610/" title=".NET Core 部署IIS">.NET Core 部署IIS</a></span>
   </li>
 
   </ul>

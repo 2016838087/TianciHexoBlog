@@ -39,39 +39,22 @@
         <link rel="alternate" href="https://lovetianci.cn/2020/01/12/hexo0112/"/>
         <content type="html">&lt;h2 id=&#34;打开git-bash输入以下代码安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开git-bash输入以下代码安装hexo&#34;&gt;#&lt;/a&gt; 打开 Git Bash，输入以下代码安装 hexo&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
-&lt;pre&gt;&lt;code&gt;$ npm install -g hexo
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;安装完成在任意盘创建文件夹例如dhexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装完成在任意盘创建文件夹例如dhexo&#34;&gt;#&lt;/a&gt; 安装完成在任意盘创建文件夹，例如 D:\hexo&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; -g hexo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;安装完成在任意盘创建文件夹例如dhexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装完成在任意盘创建文件夹例如dhexo&#34;&gt;#&lt;/a&gt; 安装完成在任意盘创建文件夹，例如 D:\hexo&lt;/h3&gt;
 &lt;h3 id=&#34;再右击打开git-bash输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#再右击打开git-bash输入&#34;&gt;#&lt;/a&gt; 再右击打开 Git Bash，输入&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$ cd D:\hexo
-$ hexo init
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;hexo会自动下载一些文件到这个目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo会自动下载一些文件到这个目录&#34;&gt;#&lt;/a&gt; hexo 会自动下载一些文件到这个目录&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token builtin class-name&#34;&gt;cd&lt;/span&gt; D:&lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt;hexo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;hexo会自动下载一些文件到这个目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#hexo会自动下载一些文件到这个目录&#34;&gt;#&lt;/a&gt; hexo 会自动下载一些文件到这个目录&lt;/h3&gt;
 &lt;h3 id=&#34;然后继续输入&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后继续输入&#34;&gt;#&lt;/a&gt; 然后继续输入&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$ npm install hexo-deployer-git
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img data-src=&#34;file.png&#34; alt=&#34;文件目录&#34;&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; hexo-deployer-git&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;file.png&#34; alt=&#34;文件目录&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;这个是因为等下提交代码需要此插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这个是因为等下提交代码需要此插件&#34;&gt;#&lt;/a&gt; 这个是因为等下提交代码需要此插件&lt;/h3&gt;
 &lt;h3 id=&#34;现在生成网站并预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#现在生成网站并预览&#34;&gt;#&lt;/a&gt; 现在生成网站并预览&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$ hexo g
-$ hexo s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览&#34;&gt;#&lt;/a&gt; 进入浏览器输入&lt;span class=&#34;exturl&#34; data-url=&#34;bG9jYWxob3N0OjQwMDA=&#34;&gt; localhost:4000&lt;/span&gt; 访问你的网站吧，Ctrl+C 停止预览&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo s&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#进入浏览器输入localhost4000访问你的网站吧ctrlc停止预览&#34;&gt;#&lt;/a&gt; 进入浏览器输入&lt;span class=&#34;exturl&#34; data-url=&#34;bG9jYWxob3N0OjQwMDA=&#34;&gt; localhost:4000&lt;/span&gt; 访问你的网站吧，Ctrl+C 停止预览&lt;/h3&gt;
 &lt;h3 id=&#34;在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#在网上下一个主题然后放进hexo文件夹下面的theme文件夹里面&#34;&gt;#&lt;/a&gt; 在网上下一个主题然后放进 hexo 文件夹下面的 theme 文件夹里面&lt;/h3&gt;
 &lt;h3 id=&#34;修改hexo文件夹中_configyml文件里面的theme属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#修改hexo文件夹中_configyml文件里面的theme属性&#34;&gt;#&lt;/a&gt; 修改 hexo 文件夹中_config.yml 文件里面的 theme 属性&lt;/h3&gt;
 &lt;h3 id=&#34;将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#将原来的landscape改为你所下载主题的文件夹名打开git-bash重新生成并预览&#34;&gt;#&lt;/a&gt; 将原来的 landscape 改为你所下载主题的文件夹名，打开 Git Bash 重新生成并预览&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$ hexo g
-$ hexo s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;你会发现页面已经适应了你的主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#你会发现页面已经适应了你的主题&#34;&gt;#&lt;/a&gt; 你会发现页面已经适应了你的主题&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo s&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;你会发现页面已经适应了你的主题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#你会发现页面已经适应了你的主题&#34;&gt;#&lt;/a&gt; 你会发现页面已经适应了你的主题&lt;/h3&gt;
 &lt;h3 id=&#34;之后打开hexo目录下的_configyml最后一段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#之后打开hexo目录下的_configyml最后一段&#34;&gt;#&lt;/a&gt; 之后打开 hexo 目录下的_config.yml 最后一段&lt;/h3&gt;
 &lt;p&gt;&lt;img data-src=&#34;git.png&#34; alt=&#34;_config.yml&#34;&gt;&lt;/p&gt;
 &lt;h3 id=&#34;绑定你的github项目地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#绑定你的github项目地址&#34;&gt;#&lt;/a&gt; 绑定你的 GitHub 项目地址&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;$ hexo clean
-$ hexo g
-$ hexo d
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;以上代码分别是清除public文件夹重新生成和提交代码到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以上代码分别是清除public文件夹重新生成和提交代码到github&#34;&gt;#&lt;/a&gt; 以上代码分别是清除 public 文件夹，重新生成，和提交代码到 GitHub&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo clean&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ hexo d&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;以上代码分别是清除public文件夹重新生成和提交代码到github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#以上代码分别是清除public文件夹重新生成和提交代码到github&#34;&gt;#&lt;/a&gt; 以上代码分别是清除 public 文件夹，重新生成，和提交代码到 GitHub&lt;/h3&gt;
 &lt;h3 id=&#34;然后上github你会发现存储库里面的文件都是public文件夹下面的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#然后上github你会发现存储库里面的文件都是public文件夹下面的&#34;&gt;#&lt;/a&gt; 然后上 GitHub 你会发现存储库里面的文件都是 public 文件夹下面的&lt;/h3&gt;
 &lt;h3 id=&#34;每次提交代码都只会提交此文件夹下的代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#每次提交代码都只会提交此文件夹下的代码&#34;&gt;#&lt;/a&gt; 每次提交代码都只会提交此文件夹下的代码&lt;/h3&gt;
 &lt;h3 id=&#34;本期hexo安装与部署就到这里下期见&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本期hexo安装与部署就到这里下期见&#34;&gt;#&lt;/a&gt; 本期 hexo 安装与部署就到这里，下期见&lt;/h3&gt;
