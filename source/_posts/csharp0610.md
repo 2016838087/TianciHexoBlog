@@ -19,6 +19,6 @@ comment: false
 
 [点击下载：dotnet-hosting-3.1.5-win.exe](https://download.visualstudio.microsoft.com/download/pr/7c30d3a1-f519-4167-b850-b9c49bf2aa0e/dbfa957a76a41a1e1795f59d400d4ccd/dotnet-hosting-3.1.5-win.exe "下载地址")
 
-### 下载并且安装.NET Core托管捆绑包安装程序
+### 下载并且安装DotNET Core托管捆绑包安装程序
 
 ### 重新启动IIS或者重新添加网站，发布启动即可访问成功

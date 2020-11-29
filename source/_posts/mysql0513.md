@@ -8,7 +8,7 @@ comment: false
 # 记录一下数据库存储过程
 <!-- more -->
 ### MySQL创建带条件查询的存储过程
-```MySQL
+```bash
 DELIMITER $$
 
 CREATE
@@ -20,15 +20,15 @@ CREATE
 DELIMITER ;
 ```
 ### 调用并传参
-```MySQL
+```bash
 CALL 存储过程名('参数值')
 ```
 ### 删除存储过程
-```MySQL
+```bash
 DROP PROCEDURE 存储过程名
 ```
 ### SQL Server创建带条件查询的存储过程
-```SQL
+```bash
 create proc 存储过程名
 @自定义参数 varchar(200)
 as 
@@ -36,10 +36,10 @@ select * from 表名 where 字段=@自定义参数
 go 
 ```
 ### 调用并传参
-```SQL
+```bash
 EXEC 存储过程名 '参数值'
 ```
 ### 删除存储过程
-```SQL
+```bash
 drop proc 存储过程名
 ```
