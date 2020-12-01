@@ -16,7 +16,9 @@
             <link>https://lovetianci.cn/2020/10/11/git1011/</link>
             <category>技术</category>
             <pubDate>Sun, 11 Oct 2020 21:00:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;windows服务器搭建gitlab需要安装java环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows服务器搭建gitlab需要安装java环境&#34;&gt;#&lt;/a&gt; Windows 服务器搭建 GitLab 需要安装 Java 环境&lt;/h2&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;记录一下windows服务器搭建私人gitlab&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下windows服务器搭建私人gitlab&#34;&gt;#&lt;/a&gt; 记录一下 Windows 服务器搭建私人 GitLab&lt;/h2&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
+&lt;h2 id=&#34;windows服务器搭建gitlab需要安装java环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows服务器搭建gitlab需要安装java环境&#34;&gt;#&lt;/a&gt; Windows 服务器搭建 GitLab 需要安装 Java 环境&lt;/h2&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamF2YXNlLWpkazgtZG93bmxvYWRzLmh0bWwjbGljZW5zZS1saWdodGJveA==&#34;&gt;Java 环境下载&lt;/span&gt;&lt;br&gt;
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2dpdGJsaXQvZ2l0YmxpdC9yZWxlYXNlcy9kb3dubG9hZC92MS45LjEvZ2l0YmxpdC0xLjkuMS56aXA=&#34;&gt; Gitblit-1.9.1.zip&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;下载javajdk并配置环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载javajdk并配置环境&#34;&gt;#&lt;/a&gt; 下载 JavaJDK 并配置环境&lt;/h2&gt;
