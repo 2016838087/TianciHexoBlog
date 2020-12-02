@@ -5,8 +5,8 @@ categories: DotNET
 tags: ['技术'] 
 comment: false
 ---
-## 记录.NET Core部署IIS遇到的坑
-
+## 记录DotNET Core部署IIS遇到的坑
+<!-- more -->
 ### VS2019发布项目到文件夹，然后拷贝到服务器，这些正常流程结束后访问api，出现以下情况
 
 ### 第一种500错误

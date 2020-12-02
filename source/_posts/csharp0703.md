@@ -5,7 +5,7 @@ categories: DotNET
 tags: ['技术'] 
 comment: false
 ---
-## 今天记录一下.NET Core WebAPI的全局异常处理
+## 今天记录一下DotNET Core WebAPI的全局异常处理
 <!-- more -->
 ### 上代码，先创建一个类，命名就叫ExceptionFilter继承于ExceptionFilterAttribute
 

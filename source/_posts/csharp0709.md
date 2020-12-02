@@ -5,7 +5,7 @@ categories: DotNET
 tags: ['技术']
 comment: false
 ---
-## 记录一下.NET Core使用EFCore连接MySQL数据库
+## 记录一下DotNET Core使用EFCore连接MySQL数据库
 <!-- more -->
 ### 首先从nuget包里面找到MySQL.Data.EntityFrameworkCore进行安装
 
