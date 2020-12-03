@@ -8,12 +8,12 @@
         <pubDate>Mon, 13 Jan 2020 20:00:00 +0800</pubDate>
         <lastBuildDate>Mon, 13 Jan 2020 20:00:00 +0800</lastBuildDate>
         <category>技术</category>
-        <category>娱乐</category>
         <category>面试题</category>
+        <category>娱乐</category>
         <item>
-            <guid isPermalink="true">https://lovetianci.cn/2020/01/13/hexo0113/</guid>
+            <guid isPermalink="true">https://lovetianci.cn/Hexo/Hexo_Command/</guid>
             <title>Hexo文件操作</title>
-            <link>https://lovetianci.cn/2020/01/13/hexo0113/</link>
+            <link>https://lovetianci.cn/Hexo/Hexo_Command/</link>
             <category>技术</category>
             <pubDate>Mon, 13 Jan 2020 20:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;搭建hexo静态博客难免会遇到小问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭建hexo静态博客难免会遇到小问题&#34;&gt;#&lt;/a&gt; 搭建 Hexo 静态博客难免会遇到小问题&lt;/h2&gt;
@@ -37,9 +37,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://lovetianci.cn/2020/01/12/hexo0112/</guid>
+            <guid isPermalink="true">https://lovetianci.cn/Hexo/Hexo_Setup/</guid>
             <title>Hexo安装与部署</title>
-            <link>https://lovetianci.cn/2020/01/12/hexo0112/</link>
+            <link>https://lovetianci.cn/Hexo/Hexo_Setup/</link>
             <category>技术</category>
             <pubDate>Sun, 12 Jan 2020 12:00:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;打开git-bash输入以下代码安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开git-bash输入以下代码安装hexo&#34;&gt;#&lt;/a&gt; 打开 Git Bash，输入以下代码安装 hexo&lt;/h2&gt;

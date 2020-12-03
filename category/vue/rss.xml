@@ -8,12 +8,12 @@
         <pubDate>Fri, 24 Apr 2020 21:30:00 +0800</pubDate>
         <lastBuildDate>Fri, 24 Apr 2020 21:30:00 +0800</lastBuildDate>
         <category>技术</category>
-        <category>娱乐</category>
         <category>面试题</category>
+        <category>娱乐</category>
         <item>
-            <guid isPermalink="true">https://lovetianci.cn/2020/04/24/vue0424/</guid>
+            <guid isPermalink="true">https://lovetianci.cn/Vue/Vue_Learning_2/</guid>
             <title>vue+elementui遇到的坑</title>
-            <link>https://lovetianci.cn/2020/04/24/vue0424/</link>
+            <link>https://lovetianci.cn/Vue/Vue_Learning_2/</link>
             <category>技术</category>
             <pubDate>Fri, 24 Apr 2020 21:30:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;入门vue第二篇&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#入门vue第二篇&#34;&gt;#&lt;/a&gt; 入门 vue，第二篇&lt;/h2&gt;
@@ -37,9 +37,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://lovetianci.cn/2020/04/23/vue0423/</guid>
+            <guid isPermalink="true">https://lovetianci.cn/Vue/Vue_Learning_1/</guid>
             <title>学习vue遇到的坑</title>
-            <link>https://lovetianci.cn/2020/04/23/vue0423/</link>
+            <link>https://lovetianci.cn/Vue/Vue_Learning_1/</link>
             <category>技术</category>
             <pubDate>Thu, 23 Apr 2020 16:25:00 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;入门vue第一篇&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#入门vue第一篇&#34;&gt;#&lt;/a&gt; 入门 Vue，第一篇&lt;/h2&gt;

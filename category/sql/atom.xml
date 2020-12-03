@@ -5,12 +5,12 @@
     <link href="https://lovetianci.cn" />
     <updated>2020-05-11T09:40:00.000Z</updated>
     <category term="技术" />
-    <category term="娱乐" />
     <category term="面试题" />
+    <category term="娱乐" />
     <entry>
-        <id>https://lovetianci.cn/2020/05/11/mysql0513/</id>
+        <id>https://lovetianci.cn/SQL/MySQL_MSSQL_Stored_Procedure/</id>
         <title>MySQL和SQL Server存储过程</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/05/11/mysql0513/"/>
+        <link rel="alternate" href="https://lovetianci.cn/SQL/MySQL_MSSQL_Stored_Procedure/"/>
         <content type="html">&lt;h1 id=&#34;记录一下数据库存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下数据库存储过程&#34;&gt;#&lt;/a&gt; 记录一下数据库存储过程&lt;/h1&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;mysql创建带条件查询的存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql创建带条件查询的存储过程&#34;&gt;#&lt;/a&gt; MySQL 创建带条件查询的存储过程&lt;/h3&gt;
@@ -24,9 +24,9 @@
         <updated>2020-05-11T09:40:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/04/14/mysql0414/</id>
+        <id>https://lovetianci.cn/SQL/MySQL_MVC5_EF6/</id>
         <title>MVC连接MySQL教程</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/04/14/mysql0414/"/>
+        <link rel="alternate" href="https://lovetianci.cn/SQL/MySQL_MVC5_EF6/"/>
         <content type="html">&lt;h2 id=&#34;记录一下mvcef连接mysql数据库需要安装的插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下mvcef连接mysql数据库需要安装的插件&#34;&gt;#&lt;/a&gt; 记录一下 MVC+EF 连接 MySQL 数据库需要安装的插件&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;准备以下文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#准备以下文件&#34;&gt;#&lt;/a&gt; 准备以下文件&lt;/h3&gt;

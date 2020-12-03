@@ -5,12 +5,12 @@
     <link href="https://lovetianci.cn" />
     <updated>2020-10-11T13:00:00.000Z</updated>
     <category term="技术" />
-    <category term="娱乐" />
     <category term="面试题" />
+    <category term="娱乐" />
     <entry>
-        <id>https://lovetianci.cn/2020/10/11/git1011/</id>
+        <id>https://lovetianci.cn/Other/GitLab_Windows10/</id>
         <title>Windows服务器搭建私人GitLab</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/10/11/git1011/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Other/GitLab_Windows10/"/>
         <content type="html">&lt;h2 id=&#34;记录一下windows服务器搭建私人gitlab&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下windows服务器搭建私人gitlab&#34;&gt;#&lt;/a&gt; 记录一下 Windows 服务器搭建私人 GitLab&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;windows服务器搭建gitlab需要安装java环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows服务器搭建gitlab需要安装java环境&#34;&gt;#&lt;/a&gt; Windows 服务器搭建 GitLab 需要安装 Java 环境&lt;/h2&gt;
@@ -32,9 +32,9 @@
         <updated>2020-10-11T13:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/07/09/csharp0709/</id>
+        <id>https://lovetianci.cn/DotNET/DotNETCore_WebAPI_EFCore_MySQL/</id>
         <title>.NET Core WebAPI使用EFCore连接MySQL</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/07/09/csharp0709/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/DotNETCore_WebAPI_EFCore_MySQL/"/>
         <content type="html">&lt;h2 id=&#34;记录一下dotnet-core使用efcore连接mysql数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下dotnet-core使用efcore连接mysql数据库&#34;&gt;#&lt;/a&gt; 记录一下 DotNET Core 使用 EFCore 连接 MySQL 数据库&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;首先从nuget包里面找到mysqldataentityframeworkcore进行安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#首先从nuget包里面找到mysqldataentityframeworkcore进行安装&#34;&gt;#&lt;/a&gt; 首先从 nuget 包里面找到 MySQL.Data.EntityFrameworkCore 进行安装&lt;/h3&gt;
@@ -50,9 +50,9 @@
         <updated>2020-07-09T10:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/07/03/csharp0703/</id>
+        <id>https://lovetianci.cn/DotNET/DotNETCore_WebAPI_Exception/</id>
         <title>.NET Core WebAPI全局异常处理</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/07/03/csharp0703/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/DotNETCore_WebAPI_Exception/"/>
         <content type="html">&lt;h2 id=&#34;今天记录一下dotnet-core-webapi的全局异常处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#今天记录一下dotnet-core-webapi的全局异常处理&#34;&gt;#&lt;/a&gt; 今天记录一下 DotNET Core WebAPI 的全局异常处理&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;上代码先创建一个类命名就叫exceptionfilter继承于exceptionfilterattribute&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#上代码先创建一个类命名就叫exceptionfilter继承于exceptionfilterattribute&#34;&gt;#&lt;/a&gt; 上代码，先创建一个类，命名就叫 ExceptionFilter 继承于 ExceptionFilterAttribute&lt;/h3&gt;
@@ -65,9 +65,9 @@
         <updated>2020-07-03T08:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/06/10/csharp0610/</id>
+        <id>https://lovetianci.cn/DotNET/DotNETCore_IIS/</id>
         <title>.NET Core 部署IIS</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/06/10/csharp0610/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/DotNETCore_IIS/"/>
         <content type="html">&lt;h2 id=&#34;记录dotnet-core部署iis遇到的坑&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录dotnet-core部署iis遇到的坑&#34;&gt;#&lt;/a&gt; 记录 DotNET Core 部署 IIS 遇到的坑&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;vs2019发布项目到文件夹然后拷贝到服务器这些正常流程结束后访问api出现以下情况&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vs2019发布项目到文件夹然后拷贝到服务器这些正常流程结束后访问api出现以下情况&#34;&gt;#&lt;/a&gt; VS2019 发布项目到文件夹，然后拷贝到服务器，这些正常流程结束后访问 api，出现以下情况&lt;/h3&gt;
@@ -84,9 +84,9 @@
         <updated>2020-06-10T07:30:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/05/11/mysql0513/</id>
+        <id>https://lovetianci.cn/SQL/MySQL_MSSQL_Stored_Procedure/</id>
         <title>MySQL和SQL Server存储过程</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/05/11/mysql0513/"/>
+        <link rel="alternate" href="https://lovetianci.cn/SQL/MySQL_MSSQL_Stored_Procedure/"/>
         <content type="html">&lt;h1 id=&#34;记录一下数据库存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下数据库存储过程&#34;&gt;#&lt;/a&gt; 记录一下数据库存储过程&lt;/h1&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;mysql创建带条件查询的存储过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql创建带条件查询的存储过程&#34;&gt;#&lt;/a&gt; MySQL 创建带条件查询的存储过程&lt;/h3&gt;
@@ -100,9 +100,9 @@
         <updated>2020-05-11T09:40:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/04/24/vue0424/</id>
+        <id>https://lovetianci.cn/Vue/Vue_Learning_2/</id>
         <title>vue+elementui遇到的坑</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/04/24/vue0424/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Vue/Vue_Learning_2/"/>
         <content type="html">&lt;h2 id=&#34;入门vue第二篇&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#入门vue第二篇&#34;&gt;#&lt;/a&gt; 入门 vue，第二篇&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;今天做一个vueelementui的分页列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#今天做一个vueelementui的分页列表&#34;&gt;#&lt;/a&gt; 今天做一个 vue+elementui 的分页列表&lt;/h3&gt;
@@ -126,9 +126,9 @@
         <updated>2020-04-24T13:30:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/04/23/vue0423/</id>
+        <id>https://lovetianci.cn/Vue/Vue_Learning_1/</id>
         <title>学习vue遇到的坑</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/04/23/vue0423/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Vue/Vue_Learning_1/"/>
         <content type="html">&lt;h2 id=&#34;入门vue第一篇&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#入门vue第一篇&#34;&gt;#&lt;/a&gt; 入门 Vue，第一篇&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;安装环境就不说了直接创建项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装环境就不说了直接创建项目&#34;&gt;#&lt;/a&gt; 安装环境就不说了，直接创建项目&lt;/h3&gt;
@@ -151,9 +151,9 @@
         <updated>2020-04-23T08:25:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/04/14/mysql0414/</id>
+        <id>https://lovetianci.cn/SQL/MySQL_MVC5_EF6/</id>
         <title>MVC连接MySQL教程</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/04/14/mysql0414/"/>
+        <link rel="alternate" href="https://lovetianci.cn/SQL/MySQL_MVC5_EF6/"/>
         <content type="html">&lt;h2 id=&#34;记录一下mvcef连接mysql数据库需要安装的插件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下mvcef连接mysql数据库需要安装的插件&#34;&gt;#&lt;/a&gt; 记录一下 MVC+EF 连接 MySQL 数据库需要安装的插件&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;准备以下文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#准备以下文件&#34;&gt;#&lt;/a&gt; 准备以下文件&lt;/h3&gt;
@@ -178,9 +178,9 @@
         <updated>2020-04-14T08:16:16.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/04/03/csharp0403/</id>
+        <id>https://lovetianci.cn/DotNET/CSharp_Remark_Attribute/</id>
         <title>C# Reamrk特性</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/04/03/csharp0403/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/CSharp_Remark_Attribute/"/>
         <content type="html">&lt;h2 id=&#34;remark特性的应用场景&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#remark特性的应用场景&#34;&gt;#&lt;/a&gt; Remark 特性的应用场景&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;场景一用户状态的枚举值定义的是英文的字段需要输出中文含义-枚举定义如下&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#场景一用户状态的枚举值定义的是英文的字段需要输出中文含义-枚举定义如下&#34;&gt;#&lt;/a&gt; 场景一：用户状态的枚举值，定义的是英文的字段，需要输出中文含义。枚举定义如下：&lt;/h3&gt;
@@ -197,9 +197,9 @@
         <updated>2020-04-03T03:11:11.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/03/06/interview0306/</id>
+        <id>https://lovetianci.cn/DotNET/CSharp_Interview_ques_2/</id>
         <title>C#理论面试题</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/03/06/interview0306/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/CSharp_Interview_ques_2/"/>
         <content type="html">&lt;h2 id=&#34;这次的面试题大多为理论知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这次的面试题大多为理论知识&#34;&gt;#&lt;/a&gt; 这次的面试题大多为理论知识&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;1-数组有没有length方法string有没有length方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-数组有没有length方法string有没有length方法&#34;&gt;#&lt;/a&gt; 1. 数组有没有 length () 方法，String 有没有 length () 方法？&lt;/h2&gt;
@@ -245,9 +245,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-03-06T05:14:20.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/03/03/interview0303/</id>
+        <id>https://lovetianci.cn/DotNET/CSharp_Interview_ques_1/</id>
         <title>C#简单面试题</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/03/03/interview0303/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/CSharp_Interview_ques_1/"/>
         <content type="html">&lt;h2 id=&#34;记录一下遇到过的面试题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下遇到过的面试题&#34;&gt;#&lt;/a&gt; 记录一下遇到过的面试题&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img data-src=&#34;low.png&#34; alt=&#34;我怎么这么垃圾，我要有技术会是这鬼样？&#34;&gt;&lt;/p&gt;
@@ -272,9 +272,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-03-03T02:20:30.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/02/10/csharp0210/</id>
+        <id>https://lovetianci.cn/DotNET/CSharp_Extension/</id>
         <title>C#扩展方法</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/02/10/csharp0210/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/CSharp_Extension/"/>
         <content type="html">&lt;h2 id=&#34;c扩展方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#c扩展方法&#34;&gt;#&lt;/a&gt; C# 扩展方法&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;定义&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#定义&#34;&gt;#&lt;/a&gt; 定义&lt;/h2&gt;
@@ -298,9 +298,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-02-10T14:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/02/03/csharp0203/</id>
+        <id>https://lovetianci.cn/DotNET/WebAPI_Exception/</id>
         <title>WebAPI全局异常处理</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/02/03/csharp0203/"/>
+        <link rel="alternate" href="https://lovetianci.cn/DotNET/WebAPI_Exception/"/>
         <content type="html">&lt;h2 id=&#34;记录一下webapi的全局异常处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下webapi的全局异常处理&#34;&gt;#&lt;/a&gt; 记录一下 WebAPI 的全局异常处理&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;通常接口出现一些小错误页面会返回一堆看不懂的代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#通常接口出现一些小错误页面会返回一堆看不懂的代码&#34;&gt;#&lt;/a&gt; 通常接口出现一些小错误，页面会返回一堆看不懂的代码&lt;/h3&gt;
@@ -323,9 +323,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-02-03T13:21:21.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/01/28/ajax0128/</id>
+        <id>https://lovetianci.cn/Other/Ajax/</id>
         <title>学习Ajax</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/01/28/ajax0128/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Other/Ajax/"/>
         <content type="html">&lt;h2 id=&#34;ajax请求post接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ajax请求post接口&#34;&gt;#&lt;/a&gt; Ajax 请求 post 接口&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;先导入jquery-331minjs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#先导入jquery-331minjs&#34;&gt;#&lt;/a&gt; 先导入 jquery-3.3.1.min.js&lt;/h3&gt;
@@ -339,9 +339,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-01-28T05:14:20.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/01/13/hexo0113/</id>
+        <id>https://lovetianci.cn/Hexo/Hexo_Command/</id>
         <title>Hexo文件操作</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/01/13/hexo0113/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Hexo/Hexo_Command/"/>
         <content type="html">&lt;h2 id=&#34;搭建hexo静态博客难免会遇到小问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭建hexo静态博客难免会遇到小问题&#34;&gt;#&lt;/a&gt; 搭建 Hexo 静态博客难免会遇到小问题&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;今天讲一下遇到的一些小坑以及解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#今天讲一下遇到的一些小坑以及解决办法&#34;&gt;#&lt;/a&gt; 今天讲一下遇到的一些小坑，以及解决办法&lt;/h3&gt;
@@ -365,9 +365,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-01-13T12:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/01/12/hexo0112/</id>
+        <id>https://lovetianci.cn/Hexo/Hexo_Setup/</id>
         <title>Hexo安装与部署</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/01/12/hexo0112/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Hexo/Hexo_Setup/"/>
         <content type="html">&lt;h2 id=&#34;打开git-bash输入以下代码安装hexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打开git-bash输入以下代码安装hexo&#34;&gt;#&lt;/a&gt; 打开 Git Bash，输入以下代码安装 hexo&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;$ &lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;install&lt;/span&gt; -g hexo&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h3 id=&#34;安装完成在任意盘创建文件夹例如dhexo&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装完成在任意盘创建文件夹例如dhexo&#34;&gt;#&lt;/a&gt; 安装完成在任意盘创建文件夹，例如 D:\hexo&lt;/h3&gt;
@@ -394,9 +394,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-01-12T04:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/01/09/update/</id>
+        <id>https://lovetianci.cn/Other/UpdateInfo/</id>
         <title>版本更新</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/01/09/update/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Other/UpdateInfo/"/>
         <content type="html">&lt;h1 id=&#34;全部更新介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#全部更新介绍&#34;&gt;#&lt;/a&gt; 全部更新介绍&lt;/h1&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;2020-01-08更换网站faviconico&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-08更换网站faviconico&#34;&gt;#&lt;/a&gt; 2020-01-08 更换网站 favicon.ico&lt;/h2&gt;
@@ -418,9 +418,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-01-09T14:22:22.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/2020/01/05/first/</id>
+        <id>https://lovetianci.cn/Other/MyFirstBlog/</id>
         <title>博客正式上线</title>
-        <link rel="alternate" href="https://lovetianci.cn/2020/01/05/first/"/>
+        <link rel="alternate" href="https://lovetianci.cn/Other/MyFirstBlog/"/>
         <content type="html">&lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
 &lt;h2 id=&#34;tianciblog于2020-01-05正式上线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tianciblog于2020-01-05正式上线&#34;&gt;#&lt;/a&gt; TianciBlog 于 2020-01-05 正式上线&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
