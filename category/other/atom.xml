@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lovetianci.cn</id>
+    <id>https://blog.lovetianci.cn</id>
     <title>TianciBlog • Posts by &#34;other&#34; category</title>
-    <link href="https://lovetianci.cn" />
+    <link href="https://blog.lovetianci.cn" />
     <updated>2020-10-11T13:00:00.000Z</updated>
     <category term="技术" />
     <category term="面试题" />
     <category term="娱乐" />
     <entry>
-        <id>https://lovetianci.cn/Other/GitLab_Windows10/</id>
+        <id>https://blog.lovetianci.cn/Other/GitLab_Windows10/</id>
         <title>Windows服务器搭建私人GitLab</title>
-        <link rel="alternate" href="https://lovetianci.cn/Other/GitLab_Windows10/"/>
+        <link rel="alternate" href="https://blog.lovetianci.cn/Other/GitLab_Windows10/"/>
         <content type="html">&lt;h2 id=&#34;记录一下windows服务器搭建私人gitlab&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下windows服务器搭建私人gitlab&#34;&gt;#&lt;/a&gt; 记录一下 Windows 服务器搭建私人 GitLab&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;windows服务器搭建gitlab需要安装java环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#windows服务器搭建gitlab需要安装java环境&#34;&gt;#&lt;/a&gt; Windows 服务器搭建 GitLab 需要安装 Java 环境&lt;/h2&gt;
@@ -32,9 +32,9 @@
         <updated>2020-10-11T13:00:00.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/Other/Ajax/</id>
+        <id>https://blog.lovetianci.cn/Other/Ajax/</id>
         <title>学习Ajax</title>
-        <link rel="alternate" href="https://lovetianci.cn/Other/Ajax/"/>
+        <link rel="alternate" href="https://blog.lovetianci.cn/Other/Ajax/"/>
         <content type="html">&lt;h2 id=&#34;ajax请求post接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ajax请求post接口&#34;&gt;#&lt;/a&gt; Ajax 请求 post 接口&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h3 id=&#34;先导入jquery-331minjs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#先导入jquery-331minjs&#34;&gt;#&lt;/a&gt; 先导入 jquery-3.3.1.min.js&lt;/h3&gt;
@@ -48,9 +48,9 @@
         <updated>2020-01-28T05:14:20.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/Other/UpdateInfo/</id>
+        <id>https://blog.lovetianci.cn/Other/UpdateInfo/</id>
         <title>版本更新</title>
-        <link rel="alternate" href="https://lovetianci.cn/Other/UpdateInfo/"/>
+        <link rel="alternate" href="https://blog.lovetianci.cn/Other/UpdateInfo/"/>
         <content type="html">&lt;h1 id=&#34;全部更新介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#全部更新介绍&#34;&gt;#&lt;/a&gt; 全部更新介绍&lt;/h1&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;2020-01-08更换网站faviconico&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-01-08更换网站faviconico&#34;&gt;#&lt;/a&gt; 2020-01-08 更换网站 favicon.ico&lt;/h2&gt;
@@ -66,15 +66,15 @@
 &lt;h2 id=&#34;2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-04-22更换部分轮播图和js地址master分支cdn&#34;&gt;#&lt;/a&gt; 2020-04-22 更换部分轮播图和 JS 地址（master 分支 CDN）&lt;/h2&gt;
 &lt;h2 id=&#34;2020-10-24最近也是新加了一写画面的特效更换了看板娘&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-10-24最近也是新加了一写画面的特效更换了看板娘&#34;&gt;#&lt;/a&gt; 2020-10-24 最近也是新加了一写画面的特效，更换了看板娘&lt;/h2&gt;
 &lt;h2 id=&#34;2020-11-28原古风主题更新至shoka挂载github-pages&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-11-28原古风主题更新至shoka挂载github-pages&#34;&gt;#&lt;/a&gt; 2020-11-28 原古风主题更新至 shoka 挂载 GitHub Pages&lt;/h2&gt;
-&lt;h2 id=&#34;2020-11-29-shoka主题作为备用博客tianciblog主站&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-11-29-shoka主题作为备用博客tianciblog主站&#34;&gt;#&lt;/a&gt; 2020-11-29 shoka 主题作为备用博客&lt;a href=&#34;https://lovetianci.cn/&#34; title=&#34;TianciBlog&#34;&gt; TianciBlog 主站&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;2020-11-29-shoka主题作为备用博客tianciblog主站&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2020-11-29-shoka主题作为备用博客tianciblog主站&#34;&gt;#&lt;/a&gt; 2020-11-29 shoka 主题作为备用博客&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9sb3ZldGlhbmNpLmNuLw==&#34;&gt; TianciBlog 主站&lt;/span&gt;&lt;/h2&gt;
 </content>
         <category term="娱乐" />
         <updated>2020-01-09T14:22:22.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/Other/MyFirstBlog/</id>
+        <id>https://blog.lovetianci.cn/Other/MyFirstBlog/</id>
         <title>博客正式上线</title>
-        <link rel="alternate" href="https://lovetianci.cn/Other/MyFirstBlog/"/>
+        <link rel="alternate" href="https://blog.lovetianci.cn/Other/MyFirstBlog/"/>
         <content type="html">&lt;h1 id=&#34;前言&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#前言&#34;&gt;#&lt;/a&gt; 前言&lt;/h1&gt;
 &lt;h2 id=&#34;tianciblog于2020-01-05正式上线&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#tianciblog于2020-01-05正式上线&#34;&gt;#&lt;/a&gt; TianciBlog 于 2020-01-05 正式上线&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;

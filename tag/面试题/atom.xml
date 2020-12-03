@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lovetianci.cn</id>
+    <id>https://blog.lovetianci.cn</id>
     <title>TianciBlog • Posts by &#34;面试题&#34; tag</title>
-    <link href="https://lovetianci.cn" />
+    <link href="https://blog.lovetianci.cn" />
     <updated>2020-03-06T05:14:20.000Z</updated>
     <category term="技术" />
     <category term="面试题" />
     <category term="娱乐" />
     <entry>
-        <id>https://lovetianci.cn/DotNET/CSharp_Interview_ques_2/</id>
+        <id>https://blog.lovetianci.cn/DotNET/CSharp_Interview_ques_2/</id>
         <title>C#理论面试题</title>
-        <link rel="alternate" href="https://lovetianci.cn/DotNET/CSharp_Interview_ques_2/"/>
+        <link rel="alternate" href="https://blog.lovetianci.cn/DotNET/CSharp_Interview_ques_2/"/>
         <content type="html">&lt;h2 id=&#34;这次的面试题大多为理论知识&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#这次的面试题大多为理论知识&#34;&gt;#&lt;/a&gt; 这次的面试题大多为理论知识&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;h2 id=&#34;1-数组有没有length方法string有没有length方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-数组有没有length方法string有没有length方法&#34;&gt;#&lt;/a&gt; 1. 数组有没有 length () 方法，String 有没有 length () 方法？&lt;/h2&gt;
@@ -56,9 +56,9 @@ StringBuffer的执行速度要大于String
         <updated>2020-03-06T05:14:20.000Z</updated>
     </entry>
     <entry>
-        <id>https://lovetianci.cn/DotNET/CSharp_Interview_ques_1/</id>
+        <id>https://blog.lovetianci.cn/DotNET/CSharp_Interview_ques_1/</id>
         <title>C#简单面试题</title>
-        <link rel="alternate" href="https://lovetianci.cn/DotNET/CSharp_Interview_ques_1/"/>
+        <link rel="alternate" href="https://blog.lovetianci.cn/DotNET/CSharp_Interview_ques_1/"/>
         <content type="html">&lt;h2 id=&#34;记录一下遇到过的面试题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#记录一下遇到过的面试题&#34;&gt;#&lt;/a&gt; 记录一下遇到过的面试题&lt;/h2&gt;
 &lt;a id=&#34;more&#34;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img data-src=&#34;low.png&#34; alt=&#34;我怎么这么垃圾，我要有技术会是这鬼样？&#34;&gt;&lt;/p&gt;
