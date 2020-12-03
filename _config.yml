@@ -15,7 +15,7 @@ timezone: ''
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://lovetianci.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :category/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -29,8 +29,8 @@ archive_dir: archives #归档文件夹
 category_dir: categories #分类文件夹
 code_dir: downloads/code #Include code 文件夹
 i18n_dir: :lang #国际化（i18n）文件夹
-skip_render: [life/**,live2d/**]
-#skip_render: life/*.html #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
+skip_render: [live2d/**]
+#skip_render: live2d/*.html #跳过指定文件的渲染，您可使用 glob 表达式来匹配路径
 
 # Writing
 new_post_name: :title.md # File name of new posts
