@@ -95,6 +95,7 @@ menu:
     archives: /archives/ || list-alt
     categories: /categories/ || th
     tags: /tags/ || tags
+  tianci: https://lovetianci.cn || heart
   # about: /about/ || user
   # friends: /friends/ || heart
   # talk: /talk/ || magic
@@ -122,7 +123,7 @@ social:
 
 sidebar:
   # Sidebar Position.
-  position: left
+  position: right
   # position: right
   # Replace the default avatar image and set the url here.
   avatar: tianci.jpg
