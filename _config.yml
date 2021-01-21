@@ -12,9 +12,9 @@ language: zh-CN
 timezone: ''
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://blog.lovetianci.cn
-root: /
+## If your site is put in a subdirectory, set url as 'https://blog.lovetianci.cn' and root as '/child/'
+url: https://tianciwork.gitee.io/tiancihexoblog # 码云路径配置，默认↑网址
+root: /tiancihexoblog/ # 码云路径配置，默认斜杠
 permalink: :category/:title/
 permalink_defaults:
 pretty_urls:

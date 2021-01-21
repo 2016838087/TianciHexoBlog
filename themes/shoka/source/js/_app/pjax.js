@@ -141,4 +141,4 @@ const siteInit = function () {
 
 window.addEventListener('DOMContentLoaded', siteInit);
 
-console.log('%c 主题版本Shoka v' + CONFIG.version +' ' + '来源'+' %c https://shoka.lostyu.me/ ', 'color: white; background: #e9546b; padding:5px 0;', 'padding:4px;border:1px solid #e9546b;')
+// console.log('%c 主题版本Shoka v' + CONFIG.version +' ' + '来源'+' %c https://shoka.lostyu.me/ ', 'color: white; background: #e9546b; padding:5px 0;', 'padding:4px;border:1px solid #e9546b;');
