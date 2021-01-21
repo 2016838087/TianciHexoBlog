@@ -1,0 +1,522 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="TianciBlog" href="https://blog.lovetianci.cn/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="TianciBlog" href="https://blog.lovetianci.cn/atom.xml" />
+<link rel="alternate" type="application/json" title="TianciBlog" href="https://blog.lovetianci.cn/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="技术" />
+
+
+<link rel="canonical" href="https://blog.lovetianci.cn/DotNET/WPF_Learning_1/">
+
+
+
+  <title>
+WPF知识点 - DotNET |
+Tianciの小窝</title>
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">WPF知识点
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2021-01-20 16:30:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2021-01-20T16:30:00+08:00">2021-01-20</time>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Tianciの小窝</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/DotNET/" itemprop="item" rel="index" title="分类于 DotNET"><span itemprop="name">DotNET</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
+  <link itemprop="mainEntityOfPage" href="https://blog.lovetianci.cn/DotNET/WPF_Learning_1/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/tianci.jpg">
+    <meta itemprop="name" content="Tianci">
+    <meta itemprop="description" content="天赐博客, 一身清贫怎敢入繁华<br>两袖清风岂能误佳人">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="TianciBlog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h3 id="2021首发"><a class="markdownIt-Anchor" href="#2021首发">#</a> 2021 首发</h3>
+<a id="more"></a>
+<h3 id="1-首先写一个list转datatable的方法"><a class="markdownIt-Anchor" href="#1-首先写一个list转datatable的方法">#</a> 1. 首先写一个 List 转 DataTable 的方法</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token return-type class-name">DataTable</span> <span class="token generic-method"><span class="token function">ListToDt</span><span class="token generic class-name"><span class="token punctuation">&lt;</span>T<span class="token punctuation">></span></span></span><span class="token punctuation">(</span><span class="token class-name">IEnumerable<span class="token punctuation">&lt;</span>T<span class="token punctuation">></span></span> collection<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token class-name"><span class="token keyword">var</span></span> props <span class="token operator">=</span> <span class="token keyword">typeof</span><span class="token punctuation">(</span><span class="token type-expression class-name">T</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">GetProperties</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token class-name"><span class="token keyword">var</span></span> dt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataTable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  dt<span class="token punctuation">.</span>Columns<span class="token punctuation">.</span><span class="token function">AddRange</span><span class="token punctuation">(</span>props<span class="token punctuation">.</span><span class="token function">Select</span><span class="token punctuation">(</span>p <span class="token operator">=></span> <span class="token keyword">new</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token constructor-invocation class-name">DataColumn</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>Name<span class="token punctuation">,</span> p<span class="token punctuation">.</span>PropertyType<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ToArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token keyword">if</span> <span class="token punctuation">(</span>collection<span class="token punctuation">.</span><span class="token function">Count</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> collection<span class="token punctuation">.</span><span class="token function">Count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="11"></td><td><pre>      <span class="token class-name">ArrayList</span> tempList <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">ArrayList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      <span class="token keyword">foreach</span> <span class="token punctuation">(</span><span class="token class-name">PropertyInfo</span> pi <span class="token keyword">in</span> props<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="13"></td><td><pre>      <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>        <span class="token class-name"><span class="token keyword">object</span></span> obj <span class="token operator">=</span> pi<span class="token punctuation">.</span><span class="token function">GetValue</span><span class="token punctuation">(</span>collection<span class="token punctuation">.</span><span class="token function">ElementAt</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>        tempList<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span>obj<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="16"></td><td><pre>      <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>      <span class="token class-name"><span class="token keyword">object</span><span class="token punctuation">[</span><span class="token punctuation">]</span></span> array <span class="token operator">=</span> tempList<span class="token punctuation">.</span><span class="token function">ToArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="18"></td><td><pre>      dt<span class="token punctuation">.</span><span class="token function">LoadDataRow</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="20"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>  <span class="token keyword">return</span> dt<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="然后定义一个list"><a class="markdownIt-Anchor" href="#然后定义一个list">#</a> 然后定义一个 list</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">public</span> <span class="token class-name">List<span class="token punctuation">&lt;</span>Teacher<span class="token punctuation">></span></span> list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">List<span class="token punctuation">&lt;</span>Teacher<span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Teacher</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> Name <span class="token punctuation">&#123;</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">public</span> <span class="token return-type class-name"><span class="token keyword">string</span></span> Password <span class="token punctuation">&#123;</span> <span class="token keyword">get</span><span class="token punctuation">;</span> <span class="token keyword">set</span><span class="token punctuation">;</span> <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="方法内调用"><a class="markdownIt-Anchor" href="#方法内调用">#</a> 方法内调用</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">DataTable</span> dt <span class="token operator">=</span> <span class="token function">ListToDt</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">DataView</span> dv <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataView</span><span class="token punctuation">(</span>dt<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="这样一个list就转成了dataview"><a class="markdownIt-Anchor" href="#这样一个list就转成了dataview">#</a> 这样一个 List 就转成了 DataView</h3>
+<h3 id="2-然后是datatable行转列的方法"><a class="markdownIt-Anchor" href="#2-然后是datatable行转列的方法">#</a> 2. 然后是 DataTable 行转列的方法</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">private</span> <span class="token return-type class-name">DataTable</span> <span class="token function">SwapTable</span><span class="token punctuation">(</span><span class="token class-name">DataTable</span> tableData<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>  <span class="token class-name"><span class="token keyword">int</span></span> intRows <span class="token operator">=</span> tableData<span class="token punctuation">.</span>Rows<span class="token punctuation">.</span>Count<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token class-name"><span class="token keyword">int</span></span> intColumns <span class="token operator">=</span> tableData<span class="token punctuation">.</span>Columns<span class="token punctuation">.</span>Count<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="5"></td><td><pre></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token comment">// 转二维数组</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  <span class="token class-name"><span class="token keyword">string</span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token punctuation">]</span></span> arrayData <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name"><span class="token keyword">string</span></span><span class="token punctuation">[</span>intRows<span class="token punctuation">,</span> intColumns<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> intRows<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> intColumns<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="12"></td><td><pre>      arrayData<span class="token punctuation">[</span>i<span class="token punctuation">,</span> j<span class="token punctuation">]</span> <span class="token operator">=</span> tableData<span class="token punctuation">.</span>Rows<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">j</span></span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="13"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="14"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="15"></td><td><pre>  <span class="token comment">// 下标对换</span></pre></td></tr><tr><td data-num="16"></td><td><pre>  <span class="token class-name"><span class="token keyword">string</span><span class="token punctuation">[</span><span class="token punctuation">,</span><span class="token punctuation">]</span></span> arrSwap <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name"><span class="token keyword">string</span></span><span class="token punctuation">[</span>intColumns<span class="token punctuation">,</span> intRows<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="17"></td><td><pre>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> m <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> m <span class="token operator">&lt;</span> intColumns<span class="token punctuation">;</span> m<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="18"></td><td><pre>  <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="19"></td><td><pre>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> n <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> n <span class="token operator">&lt;</span> intRows<span class="token punctuation">;</span> n<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="20"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="21"></td><td><pre>      arrSwap<span class="token punctuation">[</span>m<span class="token punctuation">,</span> n<span class="token punctuation">]</span> <span class="token operator">=</span> arrayData<span class="token punctuation">[</span>n<span class="token punctuation">,</span> m<span class="token punctuation">]</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="22"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="23"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="24"></td><td><pre>  <span class="token class-name">DataTable</span> dt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataTable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="25"></td><td><pre>  <span class="token comment">// 添加列</span></pre></td></tr><tr><td data-num="26"></td><td><pre>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> k <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> k <span class="token operator">&lt;</span> intRows<span class="token punctuation">;</span> k<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="27"></td><td><pre>  <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="28"></td><td><pre>    dt<span class="token punctuation">.</span>Columns<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span></pre></td></tr><tr><td data-num="29"></td><td><pre>      <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataColumn</span><span class="token punctuation">(</span>arrSwap<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">,</span> k<span class="token punctuation">]</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="30"></td><td><pre>    <span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="31"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="32"></td><td><pre>  <span class="token comment">// 添加行</span></pre></td></tr><tr><td data-num="33"></td><td><pre>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> r <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> r <span class="token operator">&lt;</span> intColumns<span class="token punctuation">;</span> r<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="34"></td><td><pre>  <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="35"></td><td><pre>    <span class="token class-name">DataRow</span> dr <span class="token operator">=</span> dt<span class="token punctuation">.</span><span class="token function">NewRow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="36"></td><td><pre>    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> c <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> c <span class="token operator">&lt;</span> intRows<span class="token punctuation">;</span> c<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="37"></td><td><pre>    <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="38"></td><td><pre>      dr<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">=</span> arrSwap<span class="token punctuation">[</span>r<span class="token punctuation">,</span> c<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">ToString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="39"></td><td><pre>    <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="40"></td><td><pre>    dt<span class="token punctuation">.</span>Rows<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span>dr<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="41"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="42"></td><td><pre>  <span class="token comment">// 添加行头</span></pre></td></tr><tr><td data-num="43"></td><td><pre>  <span class="token class-name">DataColumn</span> ColRowHead <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataColumn</span><span class="token punctuation">(</span>tableData<span class="token punctuation">.</span>Columns<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>ColumnName<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="44"></td><td><pre>  dt<span class="token punctuation">.</span>Columns<span class="token punctuation">.</span><span class="token function">Add</span><span class="token punctuation">(</span>ColRowHead<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="45"></td><td><pre>  dt<span class="token punctuation">.</span>Columns<span class="token punctuation">[</span>ColRowHead<span class="token punctuation">.</span>ColumnName<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">SetOrdinal</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="46"></td><td><pre>  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> intColumns <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="47"></td><td><pre>  <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="48"></td><td><pre>    dt<span class="token punctuation">.</span>Rows<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token attribute"><span class="token class-name">ColRowHead<span class="token punctuation">.</span>ColumnName</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> tableData<span class="token punctuation">.</span>Columns<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">.</span>ColumnName<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="49"></td><td><pre>  <span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="50"></td><td><pre>  <span class="token keyword">return</span> dt<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="51"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="3-wpf获取选中某行的值"><a class="markdownIt-Anchor" href="#3-wpf获取选中某行的值">#</a> 3. WPF 获取选中某行的值</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">DataRowView</span> mySelectedItem <span class="token operator">=</span> <span class="token punctuation">(</span>DataRowView<span class="token punctuation">)</span>dataGrid<span class="token punctuation">.</span>SelectedItem<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment">// 判断有没有选中</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">if</span> <span class="token punctuation">(</span>mySelectedItem <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token class-name">DataRow</span> result <span class="token operator">=</span> mySelectedItem<span class="token punctuation">.</span>Row<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token class-name">DataTable</span> dataTableNew <span class="token operator">=</span> dataTable<span class="token punctuation">.</span><span class="token function">Clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="7"></td><td><pre>  dataTableNew<span class="token punctuation">.</span><span class="token function">ImportRow</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">this</span><span class="token punctuation">.</span>dataGrid1<span class="token punctuation">.</span>ItemsSource <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataView</span><span class="token punctuation">(</span>dataTableNew<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><h3 id="4-datatable筛选数据"><a class="markdownIt-Anchor" href="#4-datatable筛选数据">#</a> 4. DataTable 筛选数据</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token class-name">DataRow<span class="token punctuation">[</span><span class="token punctuation">]</span></span> dr <span class="token operator">=</span> dataTable<span class="token punctuation">.</span><span class="token function">Select</span><span class="token punctuation">(</span><span class="token string">"Name ='张三'"</span><span class="token punctuation">,</span> <span class="token string">"Time DESC"</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token class-name">DataTable</span> dataTableNew <span class="token operator">=</span> dataTable<span class="token punctuation">.</span><span class="token function">Clone</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token class-name"><span class="token keyword">int</span></span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> dr<span class="token punctuation">.</span>Length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  dataTableNew<span class="token punctuation">.</span><span class="token function">ImportRow</span><span class="token punctuation">(</span>dr<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token keyword">this</span><span class="token punctuation">.</span>dataGrid1<span class="token punctuation">.</span>ItemsSource <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token constructor-invocation class-name">DataView</span><span class="token punctuation">(</span>dataTableNew<span class="token punctuation">)</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h3 id="5-textbox实时更新binding的property"><a class="markdownIt-Anchor" href="#5-textbox实时更新binding的property">#</a> 5. TextBox 实时更新 Binding 的 Property</h3>
+<figure class="highlight csharp"><figcaption data-lang="C#"></figcaption><table><tr><td data-num="1"></td><td><pre>Text<span class="token operator">=</span><span class="token string">"&#123;Binding SearchText,UpdateSourceTrigger=PropertyChanged&#125;"</span></pre></td></tr></table></figure><p><img data-src="coder.gif" alt="鸭梨好大"></p>
+
+      <div class="tags">
+          <a href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag"><i class="ic i-tag"></i> 技术</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2021-01-21 14:49:44" itemprop="dateModified" datetime="2021-01-21T14:49:44+08:00">2021-01-21</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝茶~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="Tianci 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.jpg" alt="Tianci 支付宝">
+        <p>支付宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>本文作者： </strong>Tianci <i class="ic i-at"><em>@</em></i>TianciBlog
+  </li>
+  <li class="link">
+    <strong>本文链接：</strong>
+    <a href="https://blog.lovetianci.cn/DotNET/WPF_Learning_1/" title="WPF知识点">https://blog.lovetianci.cn/DotNET/WPF_Learning_1/</a>
+  </li>
+  <li class="license">
+    <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/Other/GitLab_Windows10/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewf5l51j20zk0m8b29.jpg" title="Windows服务器搭建私人GitLab">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> Other</span>
+  <h3>Windows服务器搭建私人GitLab</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/DotNET/WPF_Learning_2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="WPF DataTable帮助类">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> DotNET</span>
+  <h3>WPF DataTable帮助类</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#2021首发"><span class="toc-number">1.</span> <span class="toc-text"># 2021 首发</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-首先写一个list转datatable的方法"><span class="toc-number">2.</span> <span class="toc-text"># 1. 首先写一个 List 转 DataTable 的方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#然后定义一个list"><span class="toc-number">3.</span> <span class="toc-text"># 然后定义一个 list</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法内调用"><span class="toc-number">4.</span> <span class="toc-text"># 方法内调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#这样一个list就转成了dataview"><span class="toc-number">5.</span> <span class="toc-text"># 这样一个 List 就转成了 DataView</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-然后是datatable行转列的方法"><span class="toc-number">6.</span> <span class="toc-text"># 2. 然后是 DataTable 行转列的方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-wpf获取选中某行的值"><span class="toc-number">7.</span> <span class="toc-text"># 3. WPF 获取选中某行的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-datatable筛选数据"><span class="toc-number">8.</span> <span class="toc-text"># 4. DataTable 筛选数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-textbox实时更新binding的property"><span class="toc-number">9.</span> <span class="toc-text"># 5. TextBox 实时更新 Binding 的 Property</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/DotNET/WebAPI_Exception/" rel="bookmark" title="WebAPI全局异常处理">WebAPI全局异常处理</a></li><li><a href="/DotNET/CSharp_Extension/" rel="bookmark" title="C#扩展方法">C#扩展方法</a></li><li><a href="/DotNET/CSharp_Interview_ques_1/" rel="bookmark" title="C#简单面试题">C#简单面试题</a></li><li><a href="/DotNET/CSharp_Interview_ques_2/" rel="bookmark" title="C#理论面试题">C#理论面试题</a></li><li><a href="/DotNET/CSharp_Remark_Attribute/" rel="bookmark" title="C# Reamrk特性">C# Reamrk特性</a></li><li><a href="/DotNET/DotNETCore_IIS/" rel="bookmark" title=".NET Core 部署IIS">.NET Core 部署IIS</a></li><li><a href="/DotNET/DotNETCore_WebAPI_Exception/" rel="bookmark" title=".NET Core WebAPI全局异常处理">.NET Core WebAPI全局异常处理</a></li><li><a href="/DotNET/DotNETCore_WebAPI_EFCore_MySQL/" rel="bookmark" title=".NET Core WebAPI使用EFCore连接MySQL">.NET Core WebAPI使用EFCore连接MySQL</a></li><li class="active"><a href="/DotNET/WPF_Learning_1/" rel="bookmark" title="WPF知识点">WPF知识点</a></li><li><a href="/DotNET/WPF_Learning_2/" rel="bookmark" title="WPF DataTable帮助类">WPF DataTable帮助类</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="Tianci"
+      data-src="/images/tianci.jpg">
+  <p class="name" itemprop="name">Tianci</p>
+  <div class="description" itemprop="description">一身清贫怎敢入繁华<br>两袖清风岂能误佳人</div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">20</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">5</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">3</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzIwMTY4MzgwODc=" title="https:&#x2F;&#x2F;github.com&#x2F;2016838087"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <span class="exturl" data-url="aHR0cHM6Ly9sb3ZldGlhbmNpLmNu"><i class="ic i-heart"></i>主站</span>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/Other/GitLab_Windows10/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/DotNET/WPF_Learning_2/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Vue/" title="分类于 Vue">Vue</a>
+</div>
+
+    <span><a href="/Vue/Vue_Learning_2/" title="vue+elementui遇到的坑">vue+elementui遇到的坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Other/" title="分类于 Other">Other</a>
+</div>
+
+    <span><a href="/Other/GitLab_Windows10/" title="Windows服务器搭建私人GitLab">Windows服务器搭建私人GitLab</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/DotNET/CSharp_Interview_ques_1/" title="C#简单面试题">C#简单面试题</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Other/" title="分类于 Other">Other</a>
+</div>
+
+    <span><a href="/Other/Ajax/" title="学习Ajax">学习Ajax</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/DotNET/WPF_Learning_1/" title="WPF知识点">WPF知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Other/" title="分类于 Other">Other</a>
+</div>
+
+    <span><a href="/Other/MyFirstBlog/" title="博客正式上线">博客正式上线</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SQL/" title="分类于 SQL">SQL</a>
+</div>
+
+    <span><a href="/SQL/MySQL_MSSQL_Stored_Procedure/" title="MySQL和SQL Server存储过程">MySQL和SQL Server存储过程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/DotNET/WPF_Learning_2/" title="WPF DataTable帮助类">WPF DataTable帮助类</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/DotNET/" title="分类于 DotNET">DotNET</a>
+</div>
+
+    <span><a href="/DotNET/CSharp_Extension/" title="C#扩展方法">C#扩展方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="分类于 Hexo">Hexo</a>
+</div>
+
+    <span><a href="/Hexo/Hexo_Command/" title="Hexo文件操作">Hexo文件操作</a></span>
+  </li>
+
+  </ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2020 – 
+    <span itemprop="copyrightYear">2021</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Tianci @ Tianciの小窝</span>
+  </div>
+  <div class="powered-by">
+    <span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbi8jL0ludGVncmF0ZWQvcmVjb3JkUXVlcnk=">湘ICP备19020367号-1</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'DotNET/WPF_Learning_1/',
+    favicon: {
+      show: "（●´3｀●）过来抱紧我！",
+      hide: "(´Д｀)不要离开我！"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },fancybox: true,copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>
